@@ -16,6 +16,9 @@ import HiddenMenu from '../src/components/HiddenMenu';
 import Drop from '../src/components/Drop'
 import Footer from '../src/components/Footer'
 
+//import pages
+import Home from '../src/pages/Home'
+
 
 import './App.css';
 
@@ -43,15 +46,21 @@ class App extends Component{
       drop = <Drop click={this.dropClickHandler}/>
     }
     return (
-      <div className='App.css'>
-        <Menu toggleClickHandler={this.toggleClickHandler}/>
-        <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
-        {drop}
+      <Router>
+        <div className='App.css'>
+          <Menu toggleClickHandler={this.toggleClickHandler}/>
+          <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
+          {drop}
+          <Switch>
+            <Route exact path='/'>
+              <Home className='home'/>
+            </Route>
+          </Switch>
 
-        <Footer/>
-  
-        
-      </div>
+          <Footer/>
+        </div>
+      </Router>
+     
     );
   }
   
