@@ -1,0 +1,39 @@
+.hidden-menu{
+    height: 100%;
+    background-color: #1b1b1b;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    position:fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 400px;
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+.hidden-menu.open{
+    transform:translateX(0)
+}
+
+.hidden-menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hidden-menu li{
+    margin: 0.5rem 0;
+}
+
+.hidden-menu a {
+    color:#71DB77;
+    text-decoration: none;
+    font-size: 1.2rem ;
+}
+
+@media (min-width: 769px){
+    .hidden-menu{
+        display: none;
+    }
+} 
