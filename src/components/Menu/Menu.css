@@ -3,6 +3,7 @@
     background-color: #1b1b1b;
     position: fixed;
     text-transform: uppercase;
+    z-index: 999;
 }
 .menu img {
     width: 100px;

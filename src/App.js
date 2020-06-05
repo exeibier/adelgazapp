@@ -44,16 +44,20 @@ class App extends Component{
       drop = <Drop click={this.dropClickHandler}/>
     }
     return (
+      <Router>
       <div className='App.css'>
         <Menu toggleClickHandler={this.toggleClickHandler}/>
         <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
         {drop}
-        <Login/>
+        <Switch>
+          <Route exact path='/'>
+            <Home className='home'/>
+          </Route>
+        </Switch>
 
         <Footer/>
-  
-        
       </div>
+    </Router>
     );
   }
   
