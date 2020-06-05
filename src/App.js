@@ -6,6 +6,8 @@ import {
   Route,
 } from 'react-router-dom';
 
+import './App.css';
+
 //Global Bootsrap
 import 'bootstrap/dist/css/bootstrap.css';
 
@@ -15,11 +17,10 @@ import Menu from '../src/components/Menu';
 import HiddenMenu from '../src/components/HiddenMenu';
 import Drop from '../src/components/Drop'
 import Footer from '../src/components/Footer'
+
+//import pages
+ import Home from '../src/pages/Home' 
 import Login from '../src/pages/Login'
-
-
-import './App.css';
-
 class App extends Component{
   constructor(props){
     super(props)
@@ -45,19 +46,20 @@ class App extends Component{
     }
     return (
       <Router>
-      <div className='App.css'>
-        <Menu toggleClickHandler={this.toggleClickHandler}/>
-        <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
-        {drop}
-        <Switch>
-          <Route exact path='/'>
-            <Home className='home'/>
-          </Route>
-        </Switch>
-
-        <Footer/>
-      </div>
-    </Router>
+        <div className='App.css'>
+          <Menu toggleClickHandler={this.toggleClickHandler}/>
+        {/*   <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/> */}
+          {drop}
+          <Switch>
+            <Route exact path='/'>
+          
+            </Route>
+          </Switch>
+          <Login/>
+          <Footer/>
+        </div>
+      </Router>
+     
     );
   }
   
