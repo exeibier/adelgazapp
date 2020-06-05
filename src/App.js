@@ -23,6 +23,7 @@ import Footer from '../src/components/Footer'
 import Login from '../src/pages/Login'
 import Signup from '../src/pages/Signup'
 import UserProfile from '../src/pages/UserProfile'
+import ProfileActivity from '../src/pages/ProfileActivity'
 class App extends Component{
   constructor(props){
     super(props)
@@ -61,6 +62,9 @@ class App extends Component{
             </Route>
             <Route exact path='/userprofile'>
               <UserProfile/>
+            </Route>
+            <Route exact path='/activity'>
+              <ProfileActivity/>
             </Route>
           </Switch>
           <Footer/>

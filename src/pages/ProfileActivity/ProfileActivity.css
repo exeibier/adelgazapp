@@ -1,4 +1,4 @@
-.user-profile {
+.user-activity {
     padding-top: 100px;
     width: 1440px;
     height: 180px;
@@ -6,63 +6,87 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.user-profile .avatar{
+.user-activity .avatar{
     width:150px;
     height: 150px;
     margin-left:640px;
-    margin-bottom: px;
 }
 
-.card-profile input{
+.card-activity input{
     text-align: center;
 }
-.card-cuenta{
-height: 370px; 
+.card-activity-user{
+height: 300px; 
 background: #FFFFFF;
 border: 1px solid #ACACAC;
 box-sizing: border-box;
 box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
 border-radius: 10px;
 text-align: center;
+margin-bottom: 80px;
 }
-.input-g{
+.input-current{
 
 box-shadow:  10px #ACACAC;
 background: #FFFFFF;
 border-radius: 5px;
-
+width: auto;
 }
 
-.input-contraseña{
-    margin-left: 10px;
-    background: #FFFFFF;
-    border-radius: 5px;
-    width: 350px;
-}
-
-
-.title-user{
+.title-account{
     color: #71DB77;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
+    margin-bottom: px;
 }
-.btn-update{
+.btn-view{
     background: #71DB77;
     border-radius: 5px;
     color: #FFFFFF;
     border:0px;
     width:180px;
     font-weight: bold;
+    margin: 17px 0px 0px 175px;
+   
 }
 
-.update-photo{
-    font-size: 15px;
+.btn-change{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    width:180px;
     font-weight: bold;
+    margin: 17px 0px 0px 260px;
 
 }
 
+.data-account{
+    font-size: 20px;
+    margin: 20px 80px 30px 150px;
+}
+
+ 
+.data-plan{
+    font-size: 20px;
+    margin: 30px 30px 20px 30px;
+
+}
+
+#scroll{
+    background-color: inherit;
+    width: auto;
+    height:auto;
+    overflow-y: scroll;
+    height: 900px;
+  }
+  
+  #scroll::-webkit-scrollbar {
+    display: none;
+  
+  }
 
 
 
