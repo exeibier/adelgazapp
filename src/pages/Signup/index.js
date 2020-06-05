@@ -7,49 +7,45 @@ export default class Signup extends Component {
 
     render() {
         return (
-            <div className='signup '>
-                <div className='container'>
-                    <div>
-                        <div class="card-wrapper">
-                            <div className='card'>
-                              <h2 className='title-login'>  REGISTRO </h2>
-                              <form>
-                              <div >
-                                  <div >
-                                      <input className="input-group1 "  placeholder="Email" ></input>
-                                  </div>
-                              </div>
-                              <div >
-                                  <div >
-                                      <input className="input-group2" placeholder="Nombre" ></input>
-                                  </div>
-                              </div>
-                              <div >
-                                  <div >
-                                      <input className="input-group1" placeholder="Apellido" ></input>
-                                  </div>
-                              </div>
-                              <div >
-                                  <div >
-                                      <input className="input-group2" placeholder="Contraseña" ></input>
-                                  </div>
-                              </div>
+            <div className='signup container-fluid full-height'>
+                <div className='row full-height'>
+                    <div className='col-12 d-flex aling-items-center'>
+                        <div className='container'>
+                            <div className='row'>
+                                <div className='col-12 col-md-6 offset-md-3 '>
+                                    <div class="card-wrapp">
+                                        <div className='card'>
+                                            <h2 className='title-signup'> REGISTRO </h2>
+                                            <form className='p-5'>
 
+                                                <div className='form-group'>
+                                                    <input className="input-email form-control " placeholder="Email" ></input>
+                                                </div>
+                                                <div className='form-group'>
+                                                    <input className="input-email form-control " placeholder="Nombre" ></input>
+                                                </div>
+                                                <div className='form-group'>
+                                                    <input className="input-email form-control " placeholder="Apellido" ></input>
+                                                </div>
+                                                <div className='form-group'>
+                                                    <input className="input-email form-control " placeholder="contraseña" ></input>
+                                                </div>
+                                                        <button className='btn-send my-3 btn-block'>ENVIAR</button>                                     
+                                            </form>
+                                            <h5> No llego tu correo de verificación | Verificar registro</h5>
+                                        </div>
+                                    </div>
+                                </div>
 
-
-                              <div >
-                                  <div >
-                                    <button className='btn-green'>ENVIAR</button>
-                                  </div>
-                              </div>
-                              <h5 className='text-contraseña'> Olvidaste tu contraseña | Recuperala aquí</h5>
-                              <h5 className='text-verificacion'> No llego tu correo de verificación | Verificar registro</h5>
-                            </form>
                             </div>
+
                         </div>
+
                     </div>
 
                 </div>
+
+
             </div>
         )
 
