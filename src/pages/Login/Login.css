@@ -1,0 +1,16 @@
+.card {
+ width: 500px;
+ height: 300px;
+ margin-top: 210px;
+ margin-left: 330px;
+ 
+ 
+
+}
+.img-background{
+    width:1440px;
+    margin-top: 98px;
+    height: 563px;
+    opacity: 0.8;
+    z-index:-1;
+}

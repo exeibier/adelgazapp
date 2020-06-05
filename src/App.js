@@ -15,6 +15,7 @@ import Menu from '../src/components/Menu';
 import HiddenMenu from '../src/components/HiddenMenu';
 import Drop from '../src/components/Drop'
 import Footer from '../src/components/Footer'
+import Login from '../src/pages/Login'
 
 
 import './App.css';
@@ -47,6 +48,7 @@ class App extends Component{
         <Menu toggleClickHandler={this.toggleClickHandler}/>
         <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
         {drop}
+        <Login/>
 
         <Footer/>
   
