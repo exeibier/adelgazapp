@@ -51,11 +51,10 @@ class App extends Component{
         {/*   <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/> */}
           {drop}
           <Switch>
-            <Route exact path='/'>
-          
+            <Route exact path='/login'>
+              <Login/>
             </Route>
           </Switch>
-          <Login/>
           <Footer/>
         </div>
       </Router>

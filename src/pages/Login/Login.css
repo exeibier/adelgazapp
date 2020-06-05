@@ -1,17 +1,26 @@
+.login {
+    padding-top: 200px;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../img/dieta-signup.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.card-wrapper{
+    padding:0 300px;
+}
+.card-wrapper input{
+    text-align: center;
+}
 .card {
- width: 500px;
- height: 280px;
- margin-top:200px;
- margin-bottom: 100px;
- margin-left: 500px;
+ height: 280px; 
  background: #FFFFFF;
 border: 1px solid #ACACAC;
 box-sizing: border-box;
 box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
 border-radius: 10px;
-
- 
 }
+
 .img-background{
     margin-top: 98px;
     opacity: 0.8;
