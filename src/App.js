@@ -21,6 +21,7 @@ import Footer from '../src/components/Footer'
 //import pages
  import Home from '../src/pages/Home' 
 import Login from '../src/pages/Login'
+import Signup from '../src/pages/Signup'
 class App extends Component{
   constructor(props){
     super(props)
@@ -53,6 +54,9 @@ class App extends Component{
           <Switch>
             <Route exact path='/login'>
               <Login/>
+            </Route>
+            <Route exact path='/signup'>
+              <Signup/>
             </Route>
           </Switch>
           <Footer/>

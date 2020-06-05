@@ -27,7 +27,7 @@ export default class Login extends Component {
 
                               <div >
                                   <div >
-                                    <button className='btn-green'>GUARDAR</button>
+                                    <button className='btn-green'>ENVIAR</button>
                                   </div>
                               </div>
                             </form>
