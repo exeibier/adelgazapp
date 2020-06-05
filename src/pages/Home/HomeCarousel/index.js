@@ -4,26 +4,34 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+//Import
+import './HomeCarousel.css'
+
 export default class HomeCarousel extends Component {
     constructor(props){
         super(props)
     }
     render(){
         return(
-            <div className='container'>
-                <Carousel autoPlay infiniteLoop useKeyboardArrows showThumbs={false} showArrows={false} showStatus={false} className='slider'>
-                  <div className='my-slide'>
-                      <img src='https://hhp-blog.s3.amazonaws.com/2020/02/healthy-eating.jpg' />
-                      <h2>¿Qué es Fit U?</h2>
-                      <p>Legend </p>
+            <div className='slider'>
+                <Carousel autoPlay infiniteLoop useKeyboardArrows showThumbs={false} showArrows={false} showStatus={false} stopOnHover interval={2000} className='slider'>
+                  <div className='my-slide-1'>
+                      <div className='text-wrapper'>
+                        <h2>¿Qué es Fit U?</h2>
+                        <p>Legend</p>
+                      </div>                      
                   </div>
-                  <div>
-                      <img src="https://hhp-blog.s3.amazonaws.com/2020/02/healthy-eating.jpg" />
-                      <p className="legend">Legend 2</p>
+                  <div className='my-slide-2'>
+                      <div className='text-wrapper'>
+                        <h2>¿Qué es Fit U?</h2>
+                        <p>Legend</p>
+                      </div>                      
                   </div>
-                  <div>
-                      <img src="https://hhp-blog.s3.amazonaws.com/2020/02/healthy-eating.jpg" />
-                      <p className="legend">Legend 3</p>
+                  <div className='my-slide-3'>
+                      <div className='text-wrapper'> 
+                        <h2>¿Qué es Fit U?</h2>
+                        <p>Legend</p>
+                      </div>                      
                   </div>
                 </Carousel>
             </div>
