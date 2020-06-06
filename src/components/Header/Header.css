@@ -1,0 +1,19 @@
+header .bg-header{
+    max-height: 200px;
+    overflow: hidden;
+
+}
+header img{
+    width: 100%;
+    filter: brightness(30%);
+    height: auto;
+    size: cover;
+}
+header .header-text h2{
+    color: #ffffff;
+}
+header .header-text{
+    position: absolute;
+    top:150px;
+    right:800px;
+}
