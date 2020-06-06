@@ -14,7 +14,7 @@ export default class Signup extends Component {
                             <div className='row'>
                                 <div className='col-12 col-md-6 offset-md-3 '>
                                     <div class="card-wrapp">
-                                        <div className='card'>
+                                        <div className='card user-signup'>
                                             <h2 className='title-signup'> REGISTRO </h2>
                                             <form className='p-5'>
 

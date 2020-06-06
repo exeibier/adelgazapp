@@ -8,7 +8,7 @@
 .card-general input{
     text-align: center;
 }
-.card {
+.user-login {
 background: #FFFFFF;
 border: 1px solid #ACACAC;
 box-sizing: border-box;
@@ -56,3 +56,14 @@ border-radius: 5px;
     height: 100vh;
     padding-top: 10vh;
 }
+.text-verificacion{
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .text-verificacion{
+       font-size: 13px;
+       margin-left: 10px;
+
+    }
+  }

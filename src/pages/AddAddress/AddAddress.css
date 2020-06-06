@@ -1,0 +1,23 @@
+.delivery{
+    width: 60px;
+    height: 60px;
+    margin-left: 50px;
+    margin-top:9px
+}
+.wrapper-delivery{
+    padding-top: 80px;
+
+}
+.add-address{
+    padding: 30px;
+}
+.title{
+    font-weight: bold;
+    font-size: 30px;
+}
+.delivery-btn{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+}

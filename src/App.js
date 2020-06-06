@@ -24,6 +24,11 @@ import Login from '../src/pages/Login'
 import Signup from '../src/pages/Signup'
 import UserProfile from '../src/pages/UserProfile'
 import ProfileActivity from '../src/pages/ProfileActivity'
+import TestPhysiognomy from '../src/pages/TestPhysiognomy'
+import MarketOrder from './pages/MarketOrder'
+import AddAddress from '../src/pages/AddAddress';
+import DateDelivery from '../src/pages/DateDelivery'
+import PaymentPayPal from '../src/pages/ PaymentPayPal'
 class App extends Component{
   constructor(props){
     super(props)
@@ -66,8 +71,24 @@ class App extends Component{
             <Route exact path='/activity'>
               <ProfileActivity/>
             </Route>
+            <Route exact path='/test'>
+              <TestPhysiognomy/>
+            </Route>
+            <Route exact path='/order'>
+              <MarketOrder/>
+            </Route>
+            <Route exact path='/address'>
+              <AddAddress/>
+            </Route>
+            <Route exact path='/delivery'>
+              <DateDelivery/>
+            </Route>
+            <Route exact path='/payment'>
+              <PaymentPayPal/>
+            </Route>
+
           </Switch>
-          <Footer/>
+         <Footer/>
         </div>
       </Router>
      

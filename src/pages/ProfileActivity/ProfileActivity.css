@@ -31,6 +31,7 @@ box-shadow:  10px #ACACAC;
 background: #FFFFFF;
 border-radius: 5px;
 width: auto;
+
 }
 
 .title-account{
@@ -48,7 +49,7 @@ width: auto;
     border:0px;
     width:180px;
     font-weight: bold;
-    margin: 17px 0px 0px 175px;
+    margin: 17px 10px 0px 175px;
    
 }
 
@@ -59,7 +60,7 @@ width: auto;
     border:0px;
     width:180px;
     font-weight: bold;
-    margin: 17px 0px 0px 260px;
+    margin: 17px 0px 0px 220px;
 
 }
 
@@ -70,8 +71,9 @@ width: auto;
 
  
 .data-plan{
-    font-size: 20px;
-    margin: 30px 30px 20px 30px;
+    font-size: 15px;
+    margin: 30px 20px 0px 80px;
+    font-weight: bold;
 
 }
 
@@ -80,13 +82,17 @@ width: auto;
     width: auto;
     height:auto;
     overflow-y: scroll;
-    height: 900px;
+    
   }
   
   #scroll::-webkit-scrollbar {
     display: none;
-  
+  }
+  @media only screen and (max-width: 768px) {
+    .container{
+        display: flex;
+    }
   }
 
-
+  
 
