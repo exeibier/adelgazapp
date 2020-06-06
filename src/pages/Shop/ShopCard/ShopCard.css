@@ -1,0 +1,31 @@
+.card-shop{
+    border-radius: 15px;
+    box-shadow: 8px 10px 25px -1px rgba(0,0,0,0.47);
+    padding:10px;
+    margin: 30px 0;
+
+}
+.card-shop .shop-card-img{
+    padding:30px;
+   text-align: center;
+}
+.card-shop img {
+    width: 175px;
+    height: 175px;
+    border-bottom: lightgray 1px solid;
+}
+.card-shop .shop-text{
+    text-align: center;
+}
+.card-shop .shop-text p{
+    color: #000000;
+}
+.card-shop .shop-text button{
+    background-color: #71DB77;
+    border: none;
+    border-radius: 10px;
+    padding:10px 40px;
+    color:#ffff;
+    font-weight: 800;
+    font-size: 20px;
+}

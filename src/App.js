@@ -18,6 +18,7 @@ import Footer from '../src/components/Footer'
 
 //import pages
 import Home from '../src/pages/Home'
+import Shop from '../src/pages/Shop'
 
 
 import './App.css';
@@ -53,10 +54,12 @@ class App extends Component{
           {drop}
           <Switch>
             <Route exact path='/'>
-              <Home className='home'/>
+              <Home/>
+            </Route>
+            <Route exact path='/tienda'>
+              <Shop/>
             </Route>
           </Switch>
-
           <Footer/>
         </div>
       </Router>
