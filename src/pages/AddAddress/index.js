@@ -7,10 +7,10 @@ export default class AddAddress extends Component {
 
     render() {
         return (
-            <div className='container-fluid full-height wrapper-delivery'>
+            <div className='container full-height mb-4 wrapper-delivery'>
                 <div className='row full-height'>
                     <div className='col-12'>
-                        <p className='title'>DETALLES DE COMPRA</p>
+                        <p className='title text-body'>DETALLES DE COMPRA</p>
                         <div class="card">
                             <div class="add-address d-flex justify-content-between">
                                 <div className='col-6'>

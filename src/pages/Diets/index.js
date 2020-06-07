@@ -7,8 +7,8 @@ export default class Diets extends Component {
 
     render() {
         return (
-            <div className='container-fluid full-height'>
-                <div className='row full-height'>
+            <div className='container full-height mb-5 mt-5'>
+                <div className='row'>
                     <div className='col-12 '>
                         <div class="row">
                             <div class="col-12 d-flex ">
