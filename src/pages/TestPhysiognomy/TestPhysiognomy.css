@@ -1,57 +1,48 @@
-/* .image-test{
-width: 385px;
-height:500px;
-margin-left: 15px;
-border-radius: 5px;
-overflow: hidden;
-background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) )
+.test {
+  background: #FFFFFF;
+  border: 1px solid #ACACAC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
+          box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
+}
 
-} */
-.test{
-background: #FFFFFF;
-border: 1px solid #ACACAC;
-box-sizing: border-box;
-box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
-border-radius: 10px;
-padding: 40px;
-/* height: 600px; */
+.data-form {
+  font-size: 10px;
+  margin-bottom: 7px;
+  font-weight: bolder;
 }
-/* .card-content{
-    width: 750px;
-} */
 
-.data-form{
-    font-size: 10px;
-    margin-bottom: 7px;
-    font-weight:bolder;
+.img-grasa {
+  width: 50px;
+  height: 50px;
 }
-.img-grasa{
-    width: 50px;
-    height: 50px;
+
+.bienvenido {
+  padding: 20px;
+  color: aqua;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.test-form{
-    margin-left: 100px;
-   /*  width: 372px;
-    height: 650px; */
+
+.info-test {
+  font-size: 15px;
+  height: 25px;
 }
-.bienvenido{
-    padding: 20px;
-    color: aqua;
-    font-size: 30px;
-    font-weight: bolder;
+
+.wrapper-image {
+  background-image: url("../../img/bolsa.jpg");
+  background-repeat: no-repeat;
+  border-radius: 15px;
 }
-.info-test{
-    font-size: 15px;
-    height: 25px;
+
+.test-form ol {
+  padding-left: 15px;
 }
-.test-wrapper{
-    padding-top: 98px;
-  
-   
+
+@media only screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
 }
-.wrapper-image{
-    background-image:url('../../img/bolsa.jpg');
-    background-repeat: no-repeat;
-    width:auto;
-    height:400px;
-}
+/*# sourceMappingURL=TestPhysiognomy.css.map */

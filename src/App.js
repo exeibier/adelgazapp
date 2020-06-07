@@ -19,7 +19,7 @@ import Drop from '../src/components/Drop'
 import Footer from '../src/components/Footer'
 
 //import pages
- import Home from '../src/pages/Home' 
+import Home from '../src/pages/Home' 
 import Login from '../src/pages/Login'
 import Signup from '../src/pages/Signup'
 import UserProfile from '../src/pages/UserProfile'
@@ -54,7 +54,7 @@ class App extends Component{
     }
     return (
       <Router>
-        <div className='App.css'>
+        <div className='App.css p-t-80'>
           <Menu toggleClickHandler={this.toggleClickHandler}/>
         {/*   <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/> */}
           {drop}

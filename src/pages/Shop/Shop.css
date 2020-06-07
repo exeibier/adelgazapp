@@ -1,0 +1,20 @@
+.shop-container{
+    padding-top: 98px;
+}
+.car-button {
+    margin: 20px;
+    text-align: center;
+}
+
+.car-button button {
+    background-color: #71DB77;
+    border: none;
+    border-radius: 10px;
+    padding:10px 40px;
+    color:#ffff;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+
