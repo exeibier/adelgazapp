@@ -7,9 +7,9 @@ export default class Login extends Component {
 
     render() {
         return (
-            <div className='login container-fluid full-height'>
-                <div className='row full-height'>
-                    <div className='col-12 d-flex aling-items-center'>
+            <div className='login'>
+                <div>
+                    <div>
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12 col-md-6 offset-md-3 '>

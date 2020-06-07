@@ -1,8 +1,11 @@
 .login {
     background-image:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('../../img/dieta-signup.jpeg');
-    background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
     
+}
+.card-general{
+    padding-top:150px;
 }
 
 .card-general input{
@@ -15,9 +18,10 @@ box-sizing: border-box;
 box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
 border-radius: 10px;
 padding: 40px;
+
 }
 
-.img-background{
+/* .img-background{
     margin-top: 98px;
     opacity: 0.8;
     z-index:-1;
@@ -25,7 +29,7 @@ padding: 40px;
     height:482px ;
     width: 1440px;
     
-}
+} */
 
 .input-email{
 
@@ -51,10 +55,6 @@ border-radius: 5px;
     border-radius: 5px;
     color: #FFFFFF;
     border:0px;
-}
-.full-height{
-    height: 100vh;
-    padding-top: 10vh;
 }
 .text-verificacion{
     margin-left: 15px;
