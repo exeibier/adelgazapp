@@ -1,12 +1,10 @@
-.cards-delivery{
-    padding: 60px;
-    margin-left: 140px;
-  
-}
-.wrapper-delivery{
-    padding-top: 98px;
-}
+
 .title-delivery{
     font-size: 30px;
-    margin-top: 15px;
+    text-align: center;
+    color: #71DB77;
+}
+.card-envio{
+    display:block;
+    margin:auto;
 }

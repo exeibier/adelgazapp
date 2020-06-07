@@ -9,28 +9,27 @@
 .user-activity .avatar{
     width:150px;
     height: 150px;
-    margin-left:640px;
+    display:block;
+    margin:auto;
+   
 }
 
 .card-activity input{
     text-align: center;
 }
 .card-activity-user{
-height: 300px; 
 background: #FFFFFF;
 border: 1px solid #ACACAC;
 box-sizing: border-box;
 box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
 border-radius: 10px;
 text-align: center;
-margin-bottom: 80px;
 }
 .input-current{
 
 box-shadow:  10px #ACACAC;
 background: #FFFFFF;
 border-radius: 5px;
-width: auto;
 
 }
 
@@ -49,8 +48,6 @@ width: auto;
     border:0px;
     width:180px;
     font-weight: bold;
-    margin: 17px 10px 0px 175px;
-   
 }
 
 .btn-change{
@@ -60,19 +57,20 @@ width: auto;
     border:0px;
     width:180px;
     font-weight: bold;
-    margin: 17px 0px 0px 220px;
+    display:block;
+    margin:auto;
+    
 
 }
 
 .data-account{
     font-size: 20px;
-    margin: 20px 80px 30px 150px;
+  
 }
 
  
 .data-plan{
     font-size: 15px;
-    margin: 30px 20px 0px 80px;
     font-weight: bold;
 
 }

@@ -98,7 +98,7 @@ class App extends Component{
             <Route exact path='/preferences'>
               <TestPreferences/>
             </Route>
-
+            <Footer/>
           </Switch>
        
         </div>

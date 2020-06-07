@@ -1,6 +1,6 @@
 .paypal-logo{
-    width:300px;
-    width: 300px;
+    width:00px;
+    width: 200px;
 }
 .btn-payment{
     background: #71DB77;
@@ -8,17 +8,15 @@
     color: #FFFFFF;
     border:0px;
     width: 400px;
+    display:block;
+    margin:auto;
+
 }
 .wrapper-payment{
     padding-top: 98px;
 }
-.card-paypal {
-    padding:30px;
-}
-.card-envio{
-    height: 150px;
-}
+
 .title-paypal{
-    margin-top: 15px;
     font-size: 30px;
+    color:#71DB77;
 }
