@@ -1,13 +1,11 @@
 .paypal-logo{
-    width:00px;
-    width: 200px;
+    width: 30%;
 }
 .btn-payment{
     background: #71DB77;
     border-radius: 5px;
     color: #FFFFFF;
     border:0px;
-    width: 400px;
     display:block;
     margin:auto;
 

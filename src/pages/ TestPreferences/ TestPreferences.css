@@ -1,5 +1,5 @@
 .wrapper-preferences{
-    padding-top: 98px;
+    padding-top: 30px;
 }
 .input-preferences{
     float: right;
@@ -20,4 +20,7 @@
     text-align: center;
     color:#71DB77;
 
+}
+.card-preferences{
+    margin-bottom: 15px;
 }

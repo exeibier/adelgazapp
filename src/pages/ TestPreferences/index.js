@@ -9,13 +9,13 @@ export default class TestPreferences extends Component {
         return (
             <div className='container wrapper-preferences'>
                 <div className='row'>  
-                    <div className='col-12'>
+                    <div className='col-12 '>
                     <h1 className='text-plan'>ELIJA SU TIPO DE PLAN ALIMENTICIO</h1>
 
-                        <div class="card p-5 ">
+                        <div class="card  card-preferences">
                             <div class="card-body">
                                 <div class="card" >
-                                    <div class="card-body p-5">
+                                    <div class="card-body ">
                                         <div class="form-check">
                                             <input class="form-check-input input-preferences " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                             <label>Dieta volumen</label>
@@ -32,7 +32,7 @@ export default class TestPreferences extends Component {
 
                             <div class="card-body">
                                 <div class="card" >
-                                    <div class="card-body p-5">
+                                    <div class="card-body ">
                                         <div class="form-check">
                                             <input class="form-check-input input-preferences " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                             <label>Dieta tonificación</label>
@@ -50,8 +50,8 @@ export default class TestPreferences extends Component {
 
                             <div class="card-body">
                                 <div class="card" >
-                                    <div class="card-body p-5"><div class="form-check">
-                                        <input class="form-check-input input-preferences mb-5" for="exampleRadios1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
+                                    <div class="card-body "><div class="form-check">
+                                        <input class="form-check-input input-preferences " for="exampleRadios1" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                         <label>Dieta para adelgazar</label>
                                     </div>
                                         <div>

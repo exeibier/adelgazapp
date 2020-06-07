@@ -7,16 +7,16 @@ export default class Signup extends Component {
 
     render() {
         return (
-            <div className='signup container-fluid full-height'>
-                <div className='row full-height'>
+            <div className='signup container-fluid'>
+                <div className='row '>
                     <div className='col-12 d-flex aling-items-center'>
                         <div className='container'>
                             <div className='row'>
-                                <div className='col-12 col-md-6 offset-md-3 '>
+                                <div className='col-12 col-md-6 offset-md-3'>
                                     <div class="card-wrapp">
                                         <div className='card user-signup'>
                                             <h2 className='title-signup'> REGISTRO </h2>
-                                            <form className='p-5'>
+                                            <form className='p-0'>
 
                                                 <div className='form-group'>
                                                     <input className="input-email form-control " placeholder="Email" ></input>
