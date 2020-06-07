@@ -7,7 +7,7 @@ import './Footer.css'
 
 function Footer (){
     return(
-        <footer className='footer py-2 mb-5'>
+        <footer className='footer py-2'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-3 col-md-s3 image d-flex align-items-center'>
