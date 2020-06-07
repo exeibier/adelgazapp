@@ -4,10 +4,10 @@ import "./TestPhysiognomy.css"
 export default class TestPhysiognomy extends Component {
     render() {
         return (
-            <div className='container test-wrapper mb-5'>
+            <div className='container test-wrapper '>
                 <div className="row">
                     <div className="col-12">
-                        <h1 className='text-center my-3'> ¡BIENVENIDO!</h1>
+                        <h1 className='text-center welcome my-3'> ¡BIENVENIDO!</h1>
                     </div>
                 </div>
                 <div className="row">

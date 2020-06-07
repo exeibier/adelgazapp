@@ -9,205 +9,114 @@ export default class Diets extends Component {
         return (
             <div className='container-fluid full-height'>
                 <div className='row full-height'>
-                    <div className='col-12 justify-content-center'>
-
+                    <div className='col-12 '>
                         <div class="row">
-                            <h5 >Desayuno</h5>
-                            <div class="col-12 d-flex justify-content-between">
-                                <div className='col-3'>
-                                    <ul className='list-food'>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
+                            <div class="col-12 d-flex ">
+                                <table class="table P-5">
+                                    <thead>
+                                        <tr >
+                                            <th className='border-0 ' scope="col">DESAYUNO</th>
+                                            <th className='border-0 ingredient' scope="col">HOT CAKES VEGANOS DE PLÁTANO</th>
+                                            <th className='border-0' scope="col">Gr</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th className='border-0' scope="row"> <img className='icon-food' src='../img/food.png'></img></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>   Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
 
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div className='col-7'>
-                                    <ul className='list-food'>
-                                        <li>
-                                            <h5>HOT CAKES VEGANOS DE PLÁTANO</h5>
-                                            <ul>
-                                                <li>
-                                                1 taza de plátano
-
-                                                </li>
-                                            </ul>
-
-                                        
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div className='col-2'>
-                                    <ul className='list-food'>
-                                        <li>
-                                          
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-
-
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div class="row">
-                            <h5>Comida</h5>
-                            <div class="col-12 d-flex justify-content-between">
-                                <div className='col-3'>
-                                    <ul className='list-food'>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
 
 
-                                        </li>
+                        <div class="row table-center">
+                            <div class="col-12 d-flex ">
+                                <table class="table P-5">
+                                    <thead>
+                                        <tr >
+                                            <th className='border-0 ' scope="col">DESAYUNO</th>
+                                            <th className='border-0 ingredient' scope="col">HOT CAKES VEGANOS DE PLÁTANO</th>
+                                            <th className='border-0' scope="col">Gr</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th className='border-0' scope="row"> <img className='icon-food' src='../img/food.png'></img></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>   Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
 
-                                    </ul>
-
-                                </div>
-                                <div className='col-7'>
-                                    <ul className='list-food'>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div className='col-2'>
-
-                                    <ul className='list-food'>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-
-
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
 
                         <div class="row">
-                            <h5 >Cena</h5>
-                            <div class="col-12 d-flex justify-content-between">
-                                <div className='col-3'>
-                                    <ul className='list-food'>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
+                            <div class="col-12 d-flex ">
+                                <table class="table P-5">
+                                    <thead>
+                                        <tr >
+                                            <th className='border-0 ' scope="col">DESAYUNO</th>
+                                            <th className='border-0 ingredient' scope="col">HOT CAKES VEGANOS DE PLÁTANO</th>
+                                            <th className='border-0' scope="col">Gr</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th className='border-0' scope="row"> <img className='icon-food' src='../img/food.png'></img></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>   Plátano</td>
+                                            <td className='border-0'>100 gr</td>
+                                        </tr>
+                                        <tr>
+                                            <th className='border-0' scope="row"></th>
+                                            <td className='border-0 ingredient'>Plátano</td>
+                                            <td className='border-0'>100 gr</td>
 
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-                                        </li>
-                                        <li>
-                                            <img className='icon-food' src='../img/food.png'></img>
-
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div className='col-7'>
-                                    <ul className='list-food'>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-                                <div className='col-2'>
-                                    <ul className='list-food'>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-                                        <li>
-
-                                        </li>
-
-                                    </ul>
-
-
-                                </div>
-
-
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+
 
 
 
                     </div>
 
+                    
+                </div>
                 </div>
 
-
-            </div>
-
-        )
-
-    }
+                )
+        
+            }
 }

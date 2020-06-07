@@ -1,0 +1,23 @@
+.wrapper-preferences{
+    padding-top: 98px;
+}
+.input-preferences{
+    float: right;
+}
+.diet{
+    color:#1b1b1b;
+}
+.btn-diet{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    width:50%;
+    display:block;
+    margin:auto;
+}
+.text-plan{
+    text-align: center;
+    color:#71DB77;
+
+}

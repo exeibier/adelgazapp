@@ -39,6 +39,9 @@
 .test-form ol {
   padding-left: 15px;
 }
+.welcome{
+  color:#71DB77;
+}
 
 @media only screen and (max-width: 768px) {
   .container {

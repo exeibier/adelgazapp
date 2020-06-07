@@ -29,6 +29,9 @@ import MarketOrder from './pages/MarketOrder'
 import AddAddress from '../src/pages/AddAddress';
 import DateDelivery from '../src/pages/DateDelivery'
 import PaymentPayPal from '../src/pages/ PaymentPayPal'
+import Diets from '../src/pages/Diets'
+import PhysiognomyResult from '../src/pages/ PhysiognomyResult'
+import  TestPreferences from '../src/pages/ TestPreferences'
 class App extends Component{
   constructor(props){
     super(props)
@@ -86,9 +89,18 @@ class App extends Component{
             <Route exact path='/payment'>
               <PaymentPayPal/>
             </Route>
+            <Route exact path='/diets'>
+              <Diets/>
+            </Route>
+            <Route exact path='/fisionomia'>
+              <PhysiognomyResult/>
+            </Route>
+            <Route exact path='/preferences'>
+              <TestPreferences/>
+            </Route>
 
           </Switch>
-         <Footer/>
+       
         </div>
       </Router>
      

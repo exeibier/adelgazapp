@@ -1,0 +1,20 @@
+.text-fisionomia{
+    font-size: 10px;
+}
+.img-fisio{
+    width: 150px;
+    height:120px;
+    display:block;
+    margin:auto;
+  
+}
+.result-text{
+    padding-top: 80px;
+
+}
+.type-body{
+    color:#71DB77;
+}
+.type-physiognomy{
+    color:#1b1b1b;
+}
