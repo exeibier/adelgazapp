@@ -16,7 +16,10 @@ export default class Shop extends Component{
     render(){
         return(
             <div className='shop-container'>
-              <Header/>
+              <Header
+                imgUrl = {'https://www.romania-insider.com/sites/default/files/styles/article_large_image/public/featured_images/Vegetables-supermarket-stoe-Pixabay.com_.jpg'}
+                title = {'TIENDA'}
+              />
               <div className='container'>
                 <div className='row'>
                   <div className='col-12 col-lg-3'>

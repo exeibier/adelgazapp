@@ -15,3 +15,10 @@
 .shop-card p {
     color: #000;
 }
+
+@media (max-width: 900px) {
+    .shop-card {
+        margin: 30px 40px;
+    }
+
+}
