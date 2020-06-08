@@ -1,0 +1,45 @@
+.wrapper-preferences{
+    padding: 30px;
+}
+.input-preferences{
+    float: right;
+}
+.diet{
+    color:#1b1b1b;
+}
+.btn-diet{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    display:block;
+    margin:auto;
+    height: 40px;
+    width: 600px;
+
+}
+.text-plan{
+    text-align: center;
+    color:#71DB77;
+
+}
+.card-preferences{
+    margin-bottom: 15px;
+}
+@media only screen and (max-width: 768px) {
+    .btn-plan{
+        width: 150px;
+    }
+        
+      }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .diet{
+      height: 50px;
+    }
+    .wrapper-preferences{
+        height: 90vh;
+    }
+    
+    }
+  
