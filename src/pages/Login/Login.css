@@ -20,29 +20,6 @@ border-radius: 10px;
 padding: 40px;
 
 }
-
-/* .img-background{
-    margin-top: 98px;
-    opacity: 0.8;
-    z-index:-1;
-    position: absolute;
-    height:482px ;
-    width: 1440px;
-    
-} */
-
-.input-email{
-
-box-shadow:  10px #ACACAC;
-background: #FFFFFF;
-border-radius: 5px;
-}
-
-.input-password{
-    background: #FFFFFF;
-    border-radius: 5px;
-}
-
 .title-login{
     color: #71DB77;
     font-size: 20px;
@@ -50,20 +27,30 @@ border-radius: 5px;
     text-align: center;
     margin-top: 15px;
 }
-.btn-send{
-    background: #71DB77;
-    border-radius: 5px;
-    color: #FFFFFF;
-    border:0px;
-}
 .text-verificacion{
     margin-left: 15px;
 }
+
 
 @media only screen and (max-width: 768px) {
     .text-verificacion{
        font-size: 13px;
        margin-left: 10px;
-
     }
-  }
+   
+ }
+  
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .login{
+      height:90vh ;
+    }
+    
+    }
+
+@media only screen and (max-device-width: 480px){
+        .login{
+            height: 100vh;
+        }
+       
+    }

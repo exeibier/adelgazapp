@@ -15,7 +15,6 @@ function ShopCard({imgUrl, productName, productQty, productPrice,}){
               <p><b>{productPrice}</b></p>
               <button>AGREGAR</button>
             </div>
-
       </div>
     )
 }

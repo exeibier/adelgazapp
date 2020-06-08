@@ -1,0 +1,57 @@
+
+.card-hour{
+    padding:20px;
+    margin-bottom:10px ;
+}
+.paypal-logo{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+.btn-payment{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    display:block;
+    margin:auto;
+
+}
+
+.card-mobile{
+width: 90%;
+margin: auto;
+display: block;
+
+
+}
+.card-center{
+    margin: auto;
+display: block;
+    
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .card-mobile{
+        width: 700px;
+        padding-top:30px;
+      
+          }
+          .order-shop{
+              padding:30px;
+          }
+    
+    }
+    @media only screen and (max-width: 768px) {
+
+        .card-mobile{
+            flex-direction: row;
+            text-align: center;
+            
+              }
+          .order-shop{
+              padding:30px;
+          }
+                 
+        }

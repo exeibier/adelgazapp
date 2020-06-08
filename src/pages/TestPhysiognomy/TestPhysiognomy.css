@@ -7,11 +7,8 @@
           box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
 }
 
-.data-form {
-  font-size: 20px;
-  margin-bottom: 7px;
-  font-weight: bolder;
-  margin-bottom: 15px;
+.user{
+  height: 120vh;
 }
 
 .img-grasa {
@@ -26,10 +23,7 @@
   font-weight: bolder;
 }
 
-.info-test {
-  font-size: 15px;
-  height: 25px;
-}
+
 
 .wrapper-image {
   background-image: url("../../img/bolsa.jpg");
@@ -37,9 +31,7 @@
   border-radius: 15px;
 }
 
-.test-form ol {
-  padding-left: 15px;
-}
+
 .welcome{
   color:#71DB77;
 }
@@ -54,12 +46,15 @@
   .test-wrapper{
     height: 1000px;
   }
+  .user{
+    height: 150vh;
+  }
   
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .test-wrapper{
-    height: 1200px;
-  }
+.test-wrapper{
+  padding-top:150px;
+}
   
   }

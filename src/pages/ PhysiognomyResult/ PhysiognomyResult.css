@@ -1,13 +1,4 @@
-.text-fisionomia{
-    font-size: 20px;
-}
-.img-fisio{
-    width: 150px;
-    height:120px;
-    display:block;
-    margin:auto;
-  
-}
+
 .result-text{
     padding-top: 80px;
     height: 80vh;
@@ -16,19 +7,19 @@
 .type-body{
     color:#71DB77;
 }
-.type-physiognomy{
-    color:#1b1b1b;
-}
 
 @media only screen and (max-width: 768px) {
     .result-text{
-        height: 100vh;
+        height: 160vh;
     }
     
   }
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     .card-result{
         height: 50px;
+    }
+    .result-text{
+        height: 100vh;
     }
     
     }

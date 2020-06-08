@@ -1,15 +1,4 @@
-.img-order{
-    width: 50px;
-    height: 50px;
-}
-.wrapper-order{
-background: #FFFFFF;
-box-sizing: border-box;
-box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
-border-radius: 10px;
 
-
-}
 .market-title{
     font-size: 30px;
     margin-bottom: 40px;
@@ -18,13 +7,6 @@ border-radius: 10px;
     color: #71DB77;
 }
 
-.payment{
-    background: #71DB77;
-    border-radius: 5px;
-    color: #FFFFFF;
-    border:0px;
-   
-}
 .order{
     height: 80vh;
 }
@@ -38,7 +20,7 @@ border-radius: 10px;
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
     .order{
-      height: 100vh;
+      height: 200vh;
     
     }
     .table{
@@ -46,3 +28,10 @@ border-radius: 10px;
     }
     
     }
+
+    @media only screen and (max-device-width: 480px){
+      .table{
+        padding-left:0px;
+      }
+        
+  }
