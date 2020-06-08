@@ -3,14 +3,14 @@ import React from 'react';
 //CSS
 import './Header.css'
 
-function Header (){
+function Header ({imgUrl, title}){
     return(
         <header>
             <div className='bg-header'>
-              <img src='https://www.romania-insider.com/sites/default/files/styles/article_large_image/public/featured_images/Vegetables-supermarket-stoe-Pixabay.com_.jpg'/>  
+              <img src={imgUrl}/>  
             </div>
             <div className='header-text'>
-              <h2>TIENDA</h2>
+              <h2>{title}</h2>
             </div>
         </header>
     )
