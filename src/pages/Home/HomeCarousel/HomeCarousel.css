@@ -2,7 +2,7 @@
     color: #ffffff;
 }
 .slider .text-wrapper{
-    padding-top: 250px;
+    padding-top: 200px;
 }
 .slider .text-wrapper h2{
     font-size: 80px;
@@ -15,21 +15,24 @@
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://hhp-blog.s3.amazonaws.com/2020/02/healthy-eating.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 60vh;
     width: 100%; 
 }
 .my-slide-2{
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/06/cropped-GettyImages-643764514.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 60vh;
     width: 100%; 
 }
 .my-slide-3{
     background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://www.verywellfit.com/thmb/VcIRFnWjo8OiFWXnFCWTcADT040=/2121x1414/filters:fill(FFDB5D,1)/balanced-diet-organic-healthy-food-clean-eating-selection-including-certain-protein-prevents-cancer-931193062-799da546cdb9457e91a0e88fa8a31eac.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position: center;
+    height: 60vh;
     width: 100%; 
 }
 

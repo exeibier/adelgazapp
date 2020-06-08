@@ -1,0 +1,104 @@
+.user-activity {
+    padding-top: 100px;
+    width: 1440px;
+    height: 180px;
+    background-color:#FBFAF4;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user-activity .avatar{
+    width:150px;
+    height: 150px;
+    display:block;
+    margin:auto;
+   
+}
+
+.card-activity input{
+    text-align: center;
+}
+.card-activity-user{
+background: #FFFFFF;
+border: 1px solid #ACACAC;
+box-sizing: border-box;
+box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
+border-radius: 10px;
+text-align: center;
+}
+.input-current{
+
+box-shadow:  10px #ACACAC;
+background: #FFFFFF;
+border-radius: 5px;
+
+}
+
+.title-account{
+    color: #71DB77;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+ 
+}
+.btn-view{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    width:180px;
+    font-weight: bold;
+}
+
+.btn-change{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+    width:180px;
+    font-weight: bold;
+    display:block;
+    margin:auto;
+    
+
+}
+
+.data-account{
+    font-size: 20px;
+  
+}
+
+ 
+.data-plan{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+.activity{
+    height: 135vh;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .activity{
+        height: 180vh;
+    }
+    .btn-view{
+        width: 120px;
+    }
+    
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .activity{
+        height: 120vh;
+    }
+    
+    }
+  
+  
+  
+
+
+
+  
+
