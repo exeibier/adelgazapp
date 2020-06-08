@@ -6,13 +6,20 @@ import {
   Route,
 } from 'react-router-dom';
 
-import './App.css';
-
 //Global Bootsrap
 import 'bootstrap/dist/css/bootstrap.css';
 
-//Import components
 
+//import pages
+import Shop from '../src/pages/Shop'
+
+import './App.css';
+
+
+import './App.css';
+//Global Bootsrap
+import 'bootstrap/dist/css/bootstrap.css';
+//Import components
 import Menu from '../src/components/Menu';
 import HiddenMenu from '../src/components/HiddenMenu';
 import Drop from '../src/components/Drop'
@@ -62,6 +69,12 @@ class App extends Component{
         {/*   <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/> */}
           {drop}
           <Switch>
+          <Route exact path='/'>
+              <Home/>
+            </Route>
+            <Route exact path='/tienda'>
+              <Shop/>
+            </Route>
             <Route exact path='/login'>
               <Login/>
             </Route>
