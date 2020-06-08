@@ -1,0 +1,25 @@
+.card-wrapp input{
+    text-align: center;
+}
+
+.user-signup{
+    background: #FFFFFF;
+    border: 1px solid #ACACAC;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
+    border-radius: 10px;
+}
+.title-signup{
+    color: #71DB77;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.card-wrapp{
+        padding-top:150px;
+    }
+
+
+    

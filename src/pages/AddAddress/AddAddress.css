@@ -1,26 +1,14 @@
-.delivery{
-    width: 60px;
-    height: 60px;
-    margin-left: 50px;
-    margin-top:9px
-}
+
 .wrapper-delivery{
     padding-top: 80px;
 
 }
 
-    
 .title{
     font-weight: bold;
     font-size: 30px;
     text-align: center;
     color: #71DB77;
-}
-.delivery-btn{
-    background: #71DB77;
-    border-radius: 5px;
-    color: #FFFFFF;
-    border:0px;
 }
 
   
