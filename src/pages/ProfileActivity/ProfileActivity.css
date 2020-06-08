@@ -75,9 +75,28 @@ border-radius: 5px;
 
 }
 .activity{
-    height: 130vh;
+    height: 135vh;
 
 }
+
+@media only screen and (max-width: 768px) {
+    .activity{
+        height: 180vh;
+    }
+    .btn-view{
+        width: 120px;
+    }
+    
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .activity{
+        height: 120vh;
+    }
+    
+    }
+  
+  
+  
 
 
 

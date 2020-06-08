@@ -14,7 +14,7 @@ export default class Diets extends Component {
                 imgUrl = {'https://www.heartfoundation.org.au/getmedia/606a0e4f-d923-43b1-9bfb-367239802de3/Heart_Foundation_dietary_advice_WEBSITE.png'}
                 title = {'PLAN ALIMENTICIO'}
                />
-                <div className='container diet d mb-5 mt-5'> 
+                <div className='container diet  mb-5 mt-5'> 
                 <div className='row'>
                     <div className='col-12 '>
                         <div class="row">

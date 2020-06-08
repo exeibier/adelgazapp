@@ -5,13 +5,13 @@ export default class ProfileActivity extends Component {
     render() {
         return (
             <div className=' activity container '>
-                <div className='row' >
+                <div className='row'>
                     <div className='col-12 col-md-6 offset-md-3 user-activity' >
                         <img className='avatar d-block mx-auto' src='../img/perfil.png'></img>
                         <div class="card-activity p-1">
                             <div className='card-activity-user'>
                                 <h2 className='title-account'>  CUENTA </h2>
-                                <div className='d-flex '>
+                                <div className='d-flex'>
                                     <h2 className='data-account p-5'> Nombre</h2>
                                     <div className='p-4 mt-3'>
                                         <input className="input-current form-control " placeholder="Angelica Gallegos" ></input>
