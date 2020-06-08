@@ -66,7 +66,7 @@ class App extends Component{
       <Router>
         <div className='App.css p-t-80'>
           <Menu toggleClickHandler={this.toggleClickHandler}/>
-        {/*   <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/> */}
+          <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
           {drop}
           <Switch>
           <Route exact path='/'>
