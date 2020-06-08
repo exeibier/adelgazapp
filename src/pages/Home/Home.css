@@ -10,7 +10,7 @@
     text-align: center;
 }
 .us-block img{
-    width: 392px;
+    width: 80%;
 }
 
 h2{
@@ -48,3 +48,9 @@ h2{
     text-decoration: none;
 }
 
+@media (max-width: 900px) {
+    .btn-home-wrapper {
+        margin:0;
+        
+    }
+}
