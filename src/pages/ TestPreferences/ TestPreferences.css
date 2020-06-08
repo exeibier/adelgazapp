@@ -12,9 +12,11 @@
     border-radius: 5px;
     color: #FFFFFF;
     border:0px;
-    width:50%;
     display:block;
     margin:auto;
+    height: 40px;
+    width: 600px;
+
 }
 .text-plan{
     text-align: center;
@@ -24,3 +26,20 @@
 .card-preferences{
     margin-bottom: 15px;
 }
+@media only screen and (max-width: 768px) {
+    .btn-plan{
+        width: 150px;
+    }
+        
+      }
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .diet{
+      height: 50px;
+    }
+    .wrapper-preferences{
+        height: 90vh;
+    }
+    
+    }
+  

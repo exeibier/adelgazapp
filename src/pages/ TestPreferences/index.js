@@ -62,7 +62,7 @@ export default class TestPreferences extends Component {
 
                             </div>
 
-                            <button className='btn-diet my-3 btn-block'>GUARDAR</button>
+                            <button className='btn-diet my-3  btn-block btn-plan'>GUARDAR</button>
                         </div>
 
                     </div>

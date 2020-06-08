@@ -10,6 +10,7 @@
 }
 .result-text{
     padding-top: 80px;
+    height: 80vh;
 
 }
 .type-body{
@@ -18,3 +19,16 @@
 .type-physiognomy{
     color:#1b1b1b;
 }
+
+@media only screen and (max-width: 768px) {
+    .result-text{
+        height: 100vh;
+    }
+    
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .card-result{
+        height: 50px;
+    }
+    
+    }

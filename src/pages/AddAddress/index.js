@@ -10,21 +10,21 @@ export default class AddAddress extends Component {
             <div className='container full-height mb-4 wrapper-delivery'>
                 <div className='row full-height'>
                     <div className='col-12'>
-                        <p className='title text-body'>DETALLES DE COMPRA</p>
+                        <p className='title '>DETALLES DE COMPRA</p>
                         <div class="card">
                             <div class="add-address d-flex justify-content-between">
-                                <div className='col-6'>
+                                <div className='col-6 car'>
                                     <img className='delivery ' src='../img/transport.png'></img>
-                                    <div class="form-check ml-5 mt-2">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
+                                    <div class="form-check ml-5 mt-2 ">
+                                       {/*  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
                                         <label class="form-check-label" for="defaultCheck1">
                                            Seleccionar dirección predeterminada
-                                        </label>
+                                        </label>  */}
                                     </div>
 
                                 </div>
-                                <div className='col-6'>
-                                    <form className=''>
+                                <div className='col-6  p-3'>
+                                    <form className='mobile'>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre"></input>
                                         </div>

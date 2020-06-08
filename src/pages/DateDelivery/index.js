@@ -4,10 +4,10 @@ import "./DateDelivery.css"
 export default class DateDelivery extends Component {
     render() {
         return (
-            <div className='container-fluid  p-5'>
+            <div className='container order p-5'>
                  <h5 className='title-delivery'>DETALLES DE COMPRA</h5>
                 <div className='row  '>
-                    <div className='col-12 p-5'>
+                    <div className='col-12 card-date '>
                         <div class="card " >
                             <div class="card-body p-5">
                                 <div class="card card-envio ">

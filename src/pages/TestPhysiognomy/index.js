@@ -7,7 +7,7 @@ export default class TestPhysiognomy extends Component {
             <div className='container test-wrapper '>
                 <div className="row">
                     <div className="col-12">
-                        <h1 className='text-center welcome my-3'> ¡BIENVENIDO!</h1>
+                        <h1 className='text-center welcome my-3 mt-5 '> ¡BIENVENIDO!</h1>
                     </div>
                 </div>
                 <div className="row">

@@ -39,7 +39,7 @@ border-radius: 5px;
     font-weight: bold;
     text-align: center;
     margin-top: 15px;
-    margin-bottom: px;
+ 
 }
 .btn-view{
     background: #71DB77;
@@ -72,6 +72,10 @@ border-radius: 5px;
 .data-plan{
     font-size: 15px;
     font-weight: bold;
+
+}
+.activity{
+    height: 80vh;
 
 }
 

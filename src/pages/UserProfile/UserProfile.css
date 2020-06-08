@@ -1,23 +1,21 @@
 .user-profile {
-    padding-top: 100px;
-    width: 1440px;
-    height: 180px;
-    background-color:#FBFAF4;
+
     background-repeat: no-repeat;
     background-size: cover;
+    display:block;
+    margin:auto;
 }
 .user-profile .avatar{
     width:150px;
-    height: 150px;
-    margin-left:640px;
-    margin-bottom: px;
+    height:150px;
+    display:block;
+    margin:auto;
 }
 
 .card-profile input{
     text-align: center;
 }
 .card-cuenta{
-height: 370px; 
 background: #FFFFFF;
 border: 1px solid #ACACAC;
 box-sizing: border-box;
@@ -37,7 +35,7 @@ border-radius: 5px;
     margin-left: 10px;
     background: #FFFFFF;
     border-radius: 5px;
-    width: 350px;
+  
 }
 
 
@@ -46,7 +44,7 @@ border-radius: 5px;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
-    margin-top: 15px;
+  
 }
 .btn-update{
     background: #71DB77;
@@ -62,6 +60,21 @@ border-radius: 5px;
     font-weight: bold;
 
 }
+.user{
+    height: 80vh;
+}
+.background-avatar{
+    background-color:#FBFAF4;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .user{
+      height: 900px;
+    }
+    .btn-update{
+        margin-left:15px;
+    }
+    
+    }
 
 
 

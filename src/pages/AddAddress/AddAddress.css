@@ -8,12 +8,13 @@
     padding-top: 80px;
 
 }
-.add-address{
-    padding: 30px;
-}
+
+    
 .title{
     font-weight: bold;
     font-size: 30px;
+    text-align: center;
+    color: #71DB77;
 }
 .delivery-btn{
     background: #71DB77;
@@ -21,3 +22,11 @@
     color: #FFFFFF;
     border:0px;
 }
+
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+     .wrapper-delivery{
+         height: 90vh;
+     }
+   
+    }

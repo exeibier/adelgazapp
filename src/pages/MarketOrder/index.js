@@ -4,9 +4,9 @@ import "./MarketOrder.css"
 export default class MarketOrder extends Component {
     render() {
         return (
-            <div className='container-fluid full-height'>
-                <div className='row full-height'>
-                    <div className='col-12'>
+            <div className='container order'>
+                <div className='row'>
+                    <div className='col-12 table' >
                         <h1 className='market-title'>CARRITO</h1>
                         <div class="card">
                             <div class="wrapper-order ">
@@ -39,17 +39,22 @@ export default class MarketOrder extends Component {
                                             <td>$56.95</td>
                                         </tr>
                                         <tr>
-                                            <td scope="row"><img  className='img-order' src='../img/fresa.jpeg'></img></td>
+                                            <td scope="row"><img className='img-order' src='../img/fresa.jpeg'></img></td>
                                             <td>$56.95</td>
                                             <td>550 gr</td>
                                             <td>$56.95</td>
                                         </tr>
+
+                                        <tr >
+                                            <td className='border-0'></td>
+                                            <td className='border-0'></td>
+                                             <td className='border-0'> Total del pedido $227.8</td>
+                                             <td className='border-0'> <button className='btn-send payment btn-secondary'>ENVIAR</button></td>
+                            
+                                        </tr>
                                     </tbody>
                                 </table>
-                                <div className='total'>
-                                <h5 >Total del pedido $227.8</h5>
-                                <button className='btn-send payment btn-block'>ENVIAR</button>
-                                </div>
+
                             </div>
                         </div>
 

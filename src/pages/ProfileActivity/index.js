@@ -4,9 +4,9 @@ import "./ProfileActivity.css"
 export default class ProfileActivity extends Component {
     render() {
         return (
-            <div className='container '>
+            <div className=' activity container '>
                 <div className='row' >
-                    <div className='col-12 col-md-6 offset-md-3 user-activity' id="scroll"  >
+                    <div className='col-12 col-md-6 offset-md-3 user-activity' >
                         <img className='avatar d-block mx-auto' src='../img/perfil.png'></img>
                         <div class="card-activity p-1">
                             <div className='card-activity-user'>

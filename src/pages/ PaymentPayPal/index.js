@@ -4,18 +4,18 @@ import "./PaymentPayPal.css"
 export default class PaymentPayPal extends Component {
     render() {
         return (
-            <div className='container-fluid  wrapper-payment p-5'>
+            <div className='container  wrapper-payment p-5'>
                 <h5 className='title-paypal text-center '>REALIZA TU PAGO</h5>
                 <div className='row '>
-                    <div className='col-12  '>
-                        <div class="card justify-content-between p-2" >
+                    <div className='col-12 card-top '>
+                        <div class="card card-mobile justify-content-between p-5" >
                             <div class="d-flex justify-content-between card-paypal ">
                                 <div className='col-6 '>
                                     <img className='paypal-logo ' src='../img/PayPal-Logo.png'></img>
                                 </div>
                                 <div className='col-6'>
                                     <div class="card card-envio">
-                                        <div class="card-body">
+                                        <div class="card-body order-shop">
                                             <p> Tu pedido llegará aproximadamente a las: </p>
                                         </div>
                                     </div>
