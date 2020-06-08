@@ -62,6 +62,8 @@ border-radius: 5px;
 }
 .user{
     height: 80vh;
+    padding-top: 40px;
+
 }
 .background-avatar{
     background-color:#FBFAF4;

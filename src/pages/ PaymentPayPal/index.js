@@ -9,11 +9,11 @@ export default class PaymentPayPal extends Component {
                 <div className='row '>
                     <div className='col-12 card-top '>
                         <div class="card card-mobile justify-content-between p-5" >
-                            <div class="d-flex justify-content-between card-paypal ">
-                                <div className='col-6 '>
+                            <div class="row card-paypal ">
+                                <div className='col-12 col-md-6 '>
                                     <img className='paypal-logo ' src='../img/PayPal-Logo.png'></img>
                                 </div>
-                                <div className='col-6'>
+                                <div className='col-12 col-md-6'>
                                     <div class="card card-envio">
                                         <div class="card-body order-shop">
                                             <p> Tu pedido llegará aproximadamente a las: </p>

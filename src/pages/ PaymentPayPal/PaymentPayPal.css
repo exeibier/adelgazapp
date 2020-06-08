@@ -1,5 +1,6 @@
 .paypal-logo{
     width: 30%;
+    text-align: center;
 }
 .btn-payment{
     background: #71DB77;
@@ -23,7 +24,7 @@
 @media only screen and (max-width: 768px) {
 .card-mobile{
 flex-direction: row;
-width: 300px;
+text-align: center;
 
   }
   .order-shop{
