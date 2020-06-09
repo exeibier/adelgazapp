@@ -22,7 +22,7 @@ export default class Shop extends Component{
               />
               <div className='container'>
                 <div className='row'>
-                  <div className='col-12 col-lg-3'>
+                  <div className='col-6 col-lg-3'>
                    <ShopCard
                     imgUrl={'./img/fresa3.jpeg'}
                     productName={'fresa'}
@@ -36,7 +36,7 @@ export default class Shop extends Component{
                     productPrice={'$56.24'}
                    />
                   </div>
-                  <div className='col-12 col-lg-3'>
+                  <div className='col-6 col-lg-3'>
                   <ShopCard
                     imgUrl={'./img/toronja.jpeg'}
                     productName={'toronja'}
@@ -50,7 +50,7 @@ export default class Shop extends Component{
                     productPrice={'$56.24'}
                   />
                   </div>
-                  <div className='col-12 col-lg-3'>
+                  <div className='col-6 col-lg-3'>
                   <ShopCard
                     imgUrl={'./img/fresa3.jpeg'}
                     productName={'fresa'}
@@ -64,7 +64,7 @@ export default class Shop extends Component{
                     productPrice={'$56.24'}
                   />
                   </div>
-                  <div className='col-12 col-lg-3'>
+                  <div className='col-6 col-lg-3'>
                   <ShopCard
                     imgUrl={'./img/fresa3.jpeg'}
                     productName={'fresa'}

@@ -1,4 +1,11 @@
-
+.paypal-logo{
+    width: 30%;
+    text-align: center;
+}
+.btn-payment{
+    
+    margin:20px 0;
+}
 .wrapper-payment{
     height: 80vh;
     
