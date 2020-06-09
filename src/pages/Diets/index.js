@@ -18,7 +18,7 @@ export default class Diets extends Component {
                     <div className='row'>
                         <div className='col-12 '>
                             <div class="row">
-                                <div class="col-12 d-flex ">
+                                <div class="col-12 ">
                                     <CardDiets
                                         typeFood={'DESAYUNO'}
                                         recipe={'Hotcakes de platano'}
@@ -32,7 +32,7 @@ export default class Diets extends Component {
                                     />
 
                                 </div>
-                                <div class="col-12 d-flex table-center ">
+                                <div class="col-12 table-center ">
                                     <CardDiets
                                         typeFood={'DESAYUNO'}
                                         recipe={'Hotcakes de platano'}
@@ -46,7 +46,7 @@ export default class Diets extends Component {
                                     />
 
                                 </div>
-                                <div class="col-12 d-flex ">
+                                <div class="col-12">
                                     <CardDiets
                                         typeFood={'DESAYUNO'}
                                         recipe={'Hotcakes de platano'}
