@@ -13,7 +13,7 @@ const PayPalCheckoutButton = ({order}) => {
         },
         style: {
             label: 'pay',
-            size: 'medium',
+            size: 'responsive',
             shape: 'pill',
             color: 'blue'
         }
