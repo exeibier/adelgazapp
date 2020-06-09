@@ -91,19 +91,19 @@ function CardTest({ edad,sexo,diametroMuñeca,altura,peso,actividadFisica,porcen
                                     <div class="form-check">
                                         <input class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                         <label class="form-check-label data-form " for="exampleRadios1">
-                                            Perder peso
+                                            Dieta para ganar volumen
                                                 </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input input-test" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                         <label class="form-check-label  data-form" for="exampleRadios1">
-                                            Ganar musculo
+                                            Dieta Tonificación
                                                 </label>
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input input-test " type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked></input>
                                         <label class="form-check-label  data-form" for="exampleRadios1">
-                                            Comer saludable
+                                            Dieta para adelgazar
                                                 </label>
                                     </div>
                                 </div>

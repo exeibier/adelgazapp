@@ -20,8 +20,8 @@ export default class Menu extends Component {
                     <div className='menu-nav-items'>
                         <ul>
                             <li><a href='/'>Nosotros</a></li>
-                            <li><a href='perfil'>Perfil</a></li>
-                            <li><a href='planes'>Dietas</a></li>
+                            <li><a href='activity'>Perfil</a></li>
+                            <li><a href='diets'>Dietas</a></li>
                             <li><a href='tienda'>Tienda</a></li>
                         </ul>
                     </div>
