@@ -1,34 +1,22 @@
 import React, { Component } from 'react'
-//CSS
-import "./ProfileActivity.css"
+
+import './ProfileActivity.css'
+import CardActivity from './CardActivity'
 export default class ProfileActivity extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() {
         return (
             <div className=' activity container '>
                 <div className='row'>
                     <div className='col-12 col-md-6 offset-md-3 user-activity' >
                         <img className='avatar d-block mx-auto' src='../img/perfil.png'></img>
-                        <div class="card-activity p-1">
-                            <div className='card-activity-user'>
-                                <h2 className='title-account'>  CUENTA </h2>
-                                <div className='d-flex'>
-                                    <h2 className='data-account p-5'> Nombre</h2>
-                                    <div className='p-4 mt-3'>
-                                        <input className="input-current form-control " placeholder="Angelica Gallegos" ></input>
-                                    </div>
-                                </div>
-                                <div className='d-flex '>
-                                    <h2 className='data-account p-5 '>Email</h2>
-                                    <div className='p-4 mt-3'>
-                                        <input className="input-current form-control" placeholder="example@gmail.com" ></input>
-                                    </div>
-                                </div>
-                                <div className='d-flex justify-content-between align-items-center p-3'>
-                                    <button className='btn-change '>CAMBIAR DATOS</button>
-                                </div>
-
-                            </div>
-                        </div>
+                        <CardActivity
+                        nombre={'nombre'}
+                        email={'email'}
+                        />
+                       
                         <div class="card-activity p-1">
                             <div className='card-activity-user'>
                                 <h2 className='title-account'>  PLANES ALIMENTICIOS </h2>

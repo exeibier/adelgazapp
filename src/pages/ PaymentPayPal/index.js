@@ -4,7 +4,11 @@ import React, { Component } from 'react'
 import PayPalCheckoutButton from '../../components/PaypalCheckoutButton'
 //CSS
 import "./PaymentPayPal.css"
+import PaymentCard from './PaymentCard'
 export default class PaymentPayPal extends Component {
+    constructor(props) {
+        super(props)
+    }
     render() {
         const order = {
             customer:'Xabier',
@@ -48,13 +52,9 @@ export default class PaymentPayPal extends Component {
                                 </div>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         )
 
     }

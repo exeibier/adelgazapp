@@ -12,11 +12,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 //import pages
 import Shop from '../src/pages/Shop'
-
 import './App.css';
 
-
-import './App.css';
 //Global Bootsrap
 import 'bootstrap/dist/css/bootstrap.css';
 //Import components
@@ -35,10 +32,10 @@ import TestPhysiognomy from '../src/pages/TestPhysiognomy'
 import MarketOrder from './pages/MarketOrder'
 import AddAddress from '../src/pages/AddAddress';
 import DateDelivery from '../src/pages/DateDelivery'
-import PaymentPayPal from '../src/pages/ PaymentPayPal'
+import PaymentPayPal from '../src/pages/ PaymentPayPal/'
 import Diets from '../src/pages/Diets'
 import PhysiognomyResult from '../src/pages/ PhysiognomyResult'
-import  TestPreferences from '../src/pages/ TestPreferences'
+import TestPreferences from '../src/pages/ TestPreferences'
 class App extends Component{
   constructor(props){
     super(props)

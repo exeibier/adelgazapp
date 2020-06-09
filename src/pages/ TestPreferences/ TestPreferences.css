@@ -1,9 +1,7 @@
 .wrapper-preferences{
     padding: 30px;
 }
-.input-preferences{
-    float: right;
-}
+
 .diet{
     color:#1b1b1b;
 }
@@ -23,9 +21,7 @@
     color:#71DB77;
 
 }
-.card-preferences{
-    margin-bottom: 15px;
-}
+
 @media only screen and (max-width: 768px) {
     .btn-plan{
         width: 150px;

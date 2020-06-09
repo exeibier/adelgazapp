@@ -5,10 +5,10 @@
 .btn-payment{
     
     margin:20px 0;
-
 }
 .wrapper-payment{
     height: 80vh;
+    
 }
 
 .title-paypal{
@@ -17,30 +17,14 @@
     padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-.card-mobile{
-flex-direction: row;
-text-align: center;
 
-  }
-  .order-shop{
-      padding:30px;
-  }
+
+@media only screen and (max-width: 768px) {
+
   .wrapper-payment{
       height: 100vh;
   }
   
 }
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .card-mobile{
-        width: 700px;
-        padding-top:30px;
-     
-        
-          }
-          .order-shop{
-              padding:30px;
-          }
-    
-    }
+
   
