@@ -3,12 +3,7 @@
     text-align: center;
 }
 .btn-payment{
-    background: #71DB77;
-    border-radius: 5px;
-    color: #FFFFFF;
-    border:0px;
-    display:block;
-    margin:auto;
+   margin-top: 20px;
 
 }
 .wrapper-payment{

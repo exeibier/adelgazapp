@@ -10,7 +10,7 @@
    text-align: center;
 }
 .card-shop img {
-    width: 175px;
+    width: 80%;
     height: 175px;
     border-bottom: lightgray 1px solid;
 }
@@ -28,4 +28,15 @@
     color:#ffff;
     font-weight: 800;
     font-size: 20px;
+}
+
+@media (max-width:900px) {
+    .card-shop .shop-card-img {
+        padding: 0px;
+    }
+    .card-shop .shop-text button {
+       
+        padding:0;
+       
+    }
 }

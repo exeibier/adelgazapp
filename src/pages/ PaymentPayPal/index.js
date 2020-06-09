@@ -1,8 +1,31 @@
 import React, { Component } from 'react'
+
+//Component
+import PayPalCheckoutButton from '../../components/PaypalCheckoutButton'
 //CSS
 import "./PaymentPayPal.css"
 export default class PaymentPayPal extends Component {
     render() {
+        const order = {
+            customer:'Xabier',
+            total:'550.00',
+            items: [
+                {
+                    sku:'112',
+                    name: 'Salmón',
+                    price: '300.00',
+                    quantity: 1,
+                    currency: 'MXN'
+                },
+                {
+                    sku:'99',
+                    name: 'Fresa',
+                    price: '125.00',
+                    quantity: 2,
+                    currency: 'MXN'    
+                }
+            ]
+        };
         return (
             <div className='container  wrapper-payment p-5'>
                 <h5 className='title-paypal text-center '>REALIZA TU PAGO</h5>
@@ -19,8 +42,8 @@ export default class PaymentPayPal extends Component {
                                             <p> Tu pedido llegará aproximadamente a las: </p>
                                         </div>
                                     </div>
-                                    <div className='p-2'>
-                                    <button className='btn-payment  btn-block'>ENVIAR</button>
+                                    <div className='btn-payment'>
+                                    <PayPalCheckoutButton order = {order}/>
                                     </div>
                                 </div>
                             </div>
