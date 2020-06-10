@@ -1,5 +1,6 @@
-
 import React, { Component } from 'react'
+
+
 
 import './Signup.css'
 import CardSignup from './CardSignup'

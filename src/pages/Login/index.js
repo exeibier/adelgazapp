@@ -13,11 +13,8 @@ export default class Login extends Component {
                 <div className='container'>
                     <div className='row'>
                         <div className='col-12 col-md-6 offset-md-3 '>
-                            <div class="card-general">
-                               <CardLogin
-                               email={'Email'}
-                               contraseña={'Contraseña'}
-                               />
+                            <div className="card-general">
+                               <CardLogin/>
                             </div>
                         </div>
 

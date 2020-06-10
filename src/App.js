@@ -40,8 +40,29 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      toggleOpen: false
+      toggleOpen: false,
+      isUserLogedIn: false
     }
+
+    this.logOut = this.logOut.bind(this)
+  }
+
+  componentDidMount(){
+    const authToken = localStorage.getItem('authTokenUser')
+    if (authToken){
+      this.setState({
+        isUserLogedIn: true
+      })
+    }
+  }
+
+  logOut(){
+    localStorage.removeItem('authTokenUser')
+    this.setState({
+      isUserLogedIn: false
+    })
+    this.toggleClickHandler()
+    this.dropClickHandler()
   }
 
   toggleClickHandler = () => {
@@ -55,6 +76,7 @@ class App extends Component{
   }
 
   render(){
+    const { isUserLogedIn } = this.state
     let drop;
     if (this.state.toggleOpen) {
       drop = <Drop click={this.dropClickHandler}/>
@@ -62,8 +84,17 @@ class App extends Component{
     return (
       <Router>
         <div className='App.css p-t-80'>
-          <Menu toggleClickHandler={this.toggleClickHandler}/>
-          <HiddenMenu className='Hidden-menu' show={this.state.toggleOpen}/>
+          <Menu 
+          toggleClickHandler={this.toggleClickHandler}
+          isUserLogedIn = {isUserLogedIn}
+          logOut = {this.logOut}
+          />
+          <HiddenMenu 
+          className='Hidden-menu' 
+          show={this.state.toggleOpen}
+          isUserLogedIn = {isUserLogedIn}
+          logOut = {this.logOut}
+          />
           {drop}
           <Switch>
           <Route exact path='/'>
@@ -79,10 +110,14 @@ class App extends Component{
               <Signup/>
             </Route>
             <Route exact path='/userprofile'>
-              <UserProfile/>
+              <UserProfile
+                isUserLogedIn = {isUserLogedIn}
+              />
             </Route>
             <Route exact path='/activity'>
-              <ProfileActivity/>
+              <ProfileActivity
+                isUserLogedIn = {isUserLogedIn}
+              />
             </Route>
             <Route exact path='/test'>
               <TestPhysiognomy/>

@@ -6,19 +6,12 @@ import './CardAddress.css'
 function CardAddress({nombre,apellido,codigoPostal,calle,numeroInt,numeroExt,calles,celular }) {
     return (
         <div class="card">
-        <div class=" d-flex justify-content-between">
-            <div className='col-6 car'>
+        <div >
+            <div className='col-12'>
+                <div className='car'>
                 <img className='delivery ' src='../img/transport.png'></img>
-                <div class="form-check ml-5 mt-2 ">
-                   {/*  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></input>
-                    <label class="form-check-label" for="defaultCheck1">
-                       Seleccionar dirección predeterminada
-                    </label>  */}
                 </div>
-
-            </div>
-            <div className='col-6  p-3'>
-                <form className=''>
+                <form>
                     <div class="form-group">
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre"></input>
                     </div>
