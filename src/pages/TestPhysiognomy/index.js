@@ -20,16 +20,7 @@ export default class TestPhysiognomy extends Component {
                             <div className="wrapper-image w-100 h-100 border rounded-lg d-none d-md-block"></div>
                         </div>
                         <div className="col-12 col-md-6">
-                        <CardTest
-                        edad={'edad'}
-                        sexo={'sexo'}
-                        diametroMuñeca={'diametro'}
-                        altura={'altura'}
-                        peso={'peso'}
-                        actividadFisica={'actividad'}
-                        porcentajeGrasa={'grasa'}
-                        objetivo={'objetivo'}
-                        />
+                        <CardTest/>
                         </div>
                     </div>
                 </div>

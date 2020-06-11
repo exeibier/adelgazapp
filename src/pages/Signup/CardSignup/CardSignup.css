@@ -21,5 +21,12 @@
         padding-top:150px;
     }
 
+.card-activity p {
+    margin-bottom: 0;
+}
+
+.card-activity .text-activity {
+    padding-top: 35px
+}
 
     

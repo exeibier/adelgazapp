@@ -16,13 +16,7 @@ export default class Login extends Component {
                         <div className='container'>
                             <div className='row'>
                                 <div className='col-12 col-md-6 offset-md-3'>
-                                    <CardSignup
-                                    email={'email'}
-                                    nombre={'nombre'}
-                                    apellido={'apellido'}
-                                    contraseña={'contraseña'}
-
-                                    />
+                                    <CardSignup/>
 
                                 </div>
 

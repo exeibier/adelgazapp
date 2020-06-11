@@ -24,4 +24,16 @@ function LogIn(data) {
       })
   }
 
-export {LogIn, SignUp};
+  function getUserData(data){
+    const URL = `${URL_BASE}users`;
+    return fetch(URL, {
+      methor:'GET',
+      body: JSON.stringify(data),
+          headers: {
+              "Content-type": "application/json",
+          },
+          mode: "cors"
+    })
+  }
+
+export {LogIn, SignUp, getUserData};

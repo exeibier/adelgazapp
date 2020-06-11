@@ -12,12 +12,9 @@ export default class ProfileActivity extends Component {
                 <div className='row'>
                     <div className='col-12 col-md-6 offset-md-3 user-activity' >
                         <img className='avatar d-block mx-auto' src='../img/perfil.png'></img>
-                        <CardActivity
-                        nombre={'nombre'}
-                        email={'email'}
-                        />
+                        <CardActivity/>
                        
-                        <div class="card-activity p-1">
+                        <div className="card-activity p-1">
                             <div className='card-activity-user'>
                                 <h2 className='title-account'>  PLANES ALIMENTICIOS </h2>
                                 <div className='d-flex justify-content between'>
