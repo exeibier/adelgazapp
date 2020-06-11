@@ -18,20 +18,8 @@ export default class ProfileActivity extends Component {
                             <div className='card-activity-user'>
                                 <h2 className='title-account'>  PLANES ALIMENTICIOS </h2>
                                 <div className='d-flex justify-content between'>
-                                    <h2 className='data-plan p-5'> LOREM IPSUM</h2>
+                                    <h2 className='data-plan p-5'> Plan para bajar grasa</h2>
                                     <div className='p-4 mt-3 '>
-                                        <button className='btn-view'>VER</button>
-                                    </div>
-                                </div>
-                                <div className='d-flex justify-content between'>
-                                    <h2 className='data-plan p-5'>LOREM IPSUM </h2>
-                                    <div className='p-4 mt-3'>
-                                        <button className='btn-view'>VER</button>
-                                    </div>
-                                </div>
-                                <div className='d-flex justify-content between'>
-                                    <h2 className='data-plan p-5'>LOREM IPSUM</h2>
-                                    <div className='p-4 mt-3'>
                                         <button className='btn-view'>VER</button>
                                     </div>
                                 </div>

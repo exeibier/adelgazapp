@@ -26,8 +26,8 @@ export default class Home extends Component {
                 </div>
                 <div className='col-12 col-lg-6'>
                   <h2>NOSOTROS</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Hemos creado la solución perfecta para ti en colaboración con expertos nutriólogos en el deporte. Fit U ofrece dietas fáciles y económicas de acuerdo a tu fisionomía, integra también un carrito de compras para surtir los ingredientes necesarios para la preparación de tus recetas.</p>
+                  <p>Ya no existe excusas, ya que en con un solo click puedes comer sano y realizar las compras de tus planes alimenticios, con Fit U transforma tu vida en una más saludable.</p>
                 </div>
               </div>
             </div>
@@ -37,18 +37,18 @@ export default class Home extends Component {
             <h2>PLANES ALIMENTICIOS</h2>
               <div className='row'>
                 <div className='col-12 col-lg-6'>
-                  <HomeDietCard title={'Vegeteriano'}/>
+                  <HomeDietCard title={'Tonificar'}/>
                   <div className='card-diet'>
-                  <HomeDietCard title={'Keto'}/>
+                  <HomeDietCard title={'Bajar Grasa '}/>
                   </div>
                   
                 </div>
                 <div className='col-12 col-lg-6'>
                   <div className='card-diet'>
-                  <HomeDietCard title={'Bajar Grasa '}/>
+                  <HomeDietCard title={'Subir Musculo '}/>
                   </div>
                   <div className='card-diet'>
-                  <HomeDietCard title={'Subir Musculo'}/>
+                  <HomeDietCard title={'Keto'}/>
                   </div>
                 </div>
               </div>
@@ -61,19 +61,19 @@ export default class Home extends Component {
                 <div className='col-12 col-lg-4'>
                   <ShopHomeCard 
                     imageUrl={'../img/Frutas-y-verduras-dentro-de-una-bolsa-de-papel-iStock.jpg'}
-                    description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate error, voluptas quidem quisquam illo ducimus hic similique culpa?'}
+                    description={'Compra todos los ingredientes de tus planes alimenticios.'}
                   />
                 </div>
                 <div className='col-12 col-lg-4'>
                   <ShopHomeCard 
                     imageUrl={'https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/quick-chicken-and-hummus-bowl.jpg'}
-                    description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate error, voluptas quidem quisquam illo ducimus hic similique culpa?'}
+                    description={'Encuentra exactamente el producto que buscas para tu plan.'}
                   />
                 </div>
                 <div className='co-12 col-lg-4'>
                   <ShopHomeCard 
                     imageUrl={'../img/las-claves-para-elegir-una-dieta-adecuada-908701.jpg'}
-                    description={'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit a voluptate error, voluptas quidem quisquam illo ducimus hic similique culpa?'}
+                    description={'Paga con la seguridad de PayPal, realiza todos tus pagos sin ninguna preocupación'}
                   />
                 </div>
               </div>  
