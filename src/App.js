@@ -57,7 +57,9 @@ class App extends Component{
   }
 
   logOut(){
-    localStorage.removeItem('authTokenUser')
+    let keysToRemove = ['authTokenUser','authNameUser','authLastNamenUser','authIdUser','authIdTestUser']
+    keysToRemove.forEach( k => 
+      localStorage.removeItem(k))
     this.setState({
       isUserLogedIn: false
     })

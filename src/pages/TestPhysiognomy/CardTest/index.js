@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { PostTest } from '../../../services/services'
 
 //CSS
 import './CardTest.css'
@@ -9,25 +10,50 @@ export default class CardTest extends Component {
         this.state={
           age:'',
           gender:'hombre',
-          diameter: undefined,
-          height: undefined,
-          weight: undefined,
-          exercice:'pocoActivo',
-          fatPercantage:'pesoNormal',
-          objective: 'dietaPerderPeso'
+          diameter: '',
+          height: '',
+          weight: '',
+          exercise:'pocoActivo',
+          fatPercentage:'pesoNormal',
+          objective: 'adelgazar',
+          success:false
         }
         this.handleFormSubmit = this.handleFormSubmit.bind(this)
         this.handleInput = this.handleInput.bind(this)
         this.handleSelect = this.handleSelect.bind(this)
     }
 
-    handleFormSubmit(event){
+    async handleFormSubmit(event){
       event.preventDefault();
-      console.log(this.state)
+      const { age, gender, diameter, height, weight, exercise, fatPercentage, objective } = this.state;
+      const data = {
+        age,
+        gender,
+        diameter,
+        height,
+        weight,
+        exercise,
+        fatPercentage,
+        objective
+      };
+      console.log(data)
+      let response = await PostTest(data);
+      let responseJSON = await response.json();
+      if (responseJSON.success) {
+        this.setState({
+          success: true,
+        });
+      } else if (!responseJSON.success) {
+        this.setState({
+          success: false,
+        });
+      }
+
     }
     handleInput({ target: { name, value } }){
+      const stringConv = Number(value)
       this.setState({
-        [name]:value
+        [name]:stringConv
       })
 
     }
@@ -38,7 +64,10 @@ export default class CardTest extends Component {
     }
 
     render(){
-      const {age,gender, diameter, height,weight, exercice, fatPercantage, objective } = this.state
+      const {age,gender, diameter, height,weight, exercise, fatPercentage, objective, success } = this.state
+      if (success) {
+        window.location.href = "/fisionomia";
+      }
       return (
         <form className="border border-dark p-3 rounded test-form" onSubmit={this.handleFormSubmit}>
                             <ol>
@@ -51,6 +80,7 @@ export default class CardTest extends Component {
                                        value={age}
                                        onChange={this.handleInput}
                                        name={'age'}
+                                       required
                                     ></input>
                                 </div>
                                 <li className='data-form'>
@@ -68,10 +98,11 @@ export default class CardTest extends Component {
                                 </li>
                                 <div className='form-group'>
                                     <input className=" form-control info-test " placeholder="cm" 
-                                       type={'number'}
+                                       type={'text'}
                                        value={diameter}
                                        onChange={this.handleInput}
                                        name={'diameter'}
+                                       required
                                     ></input>
                                 </div>
                                 <li className='data-form'>
@@ -79,10 +110,11 @@ export default class CardTest extends Component {
                                         </li>
                                 <div className='form-group'>
                                     <input className=" form-control info-test" placeholder="cm"
-                                       type={'number'}
+                                       type={'text'}
                                        value={height}
                                        onChange={this.handleInput}
                                        name={'height'}
+                                       required
                                     ></input>
                                 </div>
                                 <li className='data-form'>
@@ -90,17 +122,18 @@ export default class CardTest extends Component {
                                         </li>
                                 <div className='form-group'>
                                     <input className=" form-control info-test" placeholder="Kg"
-                                       type={'number'}
+                                       type={'text'}
                                        value={weight}
                                        onChange={this.handleInput}
                                        name={'weight'}
+                                       required
                                     ></input>
                                 </div>
                                 <li className='data-form'>
                                     ¿Cuál es tu nivel de actividad física?
                                        </li>
                                 <div className='d-flex justify-content-between form-group'>
-                                  <select class="form-control" name={'exercice'} value={exercice} onChange={this.handleSelect}>
+                                  <select class="form-control" name={'exercice'} value={exercise} onChange={this.handleSelect}>
                                     <option value='pocoActivo'>Poco activo</option>
                                     <option value='activo'>activo</option>
                                     <option value='muyActivo'>Muy activo</option>
@@ -113,7 +146,7 @@ export default class CardTest extends Component {
                                    <img className='img-grasa' src='https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn302/wp-content/uploads/2017/12/body-type_workout-1200x800.jpg'/>
                                   </div>        
                                 <div className='d-flex justify-content-between form-group'>
-                                  <select class="form-control" name={'fatPercantage'} value={fatPercantage} onChange={this.handleSelect}>
+                                  <select class="form-control" name={'fatPercantage'} value={fatPercentage} onChange={this.handleSelect}>
                                     <option value='delgadezAceptable'>Delgado</option>
                                     <option value='pesoNormal'>Normal</option>
                                     <option valie='sobrePeso'>Sobrepeso</option>
@@ -125,9 +158,9 @@ export default class CardTest extends Component {
                                         </li>
                                 <div className='d-flex justify-content-between form-group'>
                                   <select class="form-control" name={'objective'} value={objective} onChange={this.handleSelect}>
-                                    <option value='dietaPerderPeso'>Perder peso</option>
-                                    <option value='dietaVolumen'>Ganar musculo</option>
-                                    <option valie='dietaTonificacion'>Comer saludable</option>
+                                    <option value='adelgazar'>Perder peso</option>
+                                    <option value='volumen'>Ganar musculo</option>
+                                    <option valie='tonificar'>Comer saludable</option>
                                   </select>
                                 </div> 
                             </ol>

@@ -12,7 +12,8 @@ export default class CardLogin extends Component {
       email: '',
       password: '',
       success: false,
-      flag: 1
+      flag: 1,
+      idTest: false
     }
     this.handleSubmit = this.handleSubmit.bind(this)
     this.handleInput = this.handleInput.bind(this)
@@ -33,7 +34,20 @@ export default class CardLogin extends Component {
     let response = await LogInService(data);
     let responseJSON = await response.json();
     if (responseJSON.success) {
+      // let keysToAdd = ['authTokenUser','authNameUser','authLastNamenUser','authIdUser','authIdTestUser']
+      // let responseData = responseJSON.data
+      // keysToAdd.forEach(k =>
+      //   localStorage.setItem(k, responseData))
       localStorage.setItem("authTokenUser", responseJSON.data.token);
+      localStorage.setItem("authNameUser", responseJSON.data.name);
+      localStorage.setItem("authLastNamenUser", responseJSON.data.lastName);
+      localStorage.setItem("authIdUser", responseJSON.data._id);
+      localStorage.setItem("authIdTestUser", responseJSON.data.idTest);
+      if (localStorage.getItem('authIdTestUser') === "undefined"){
+        this.setState({
+          idTest:true
+        })
+      }
       this.setState({
         success: true,
       });
@@ -45,10 +59,13 @@ export default class CardLogin extends Component {
     }
   }
   render() {
-    const {email, password, success, flag} = this.state
-    if (success) {
+    const {email, password, success, flag, idTest} = this.state
+    if (idTest){
+      window.location.href = "/test";
+    } else if (success) {
       window.location.href = "/";
     }
+    
     return (
       <div className='card user-login'>
       <h2 className='title-login'> INICIA SESIÓN </h2>
