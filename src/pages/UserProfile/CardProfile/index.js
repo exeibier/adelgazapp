@@ -1,33 +1,43 @@
-import React from 'react';
+import React, {Component} from 'react';
 
 //CSS
 import './CardProfile.css'
 
-function CardProfile({ nombre,contraseña,nuevaContraseña }) {
-    return (
-        <div class="card-profile">
-            <div className='card-cuenta p-4' >
-                <h2 className='title-user'>  CUENTA </h2>
-                <form className=''>
-                    <div className='form-group'>
-                        <input className="input-g form-control" placeholder="Nombre" ></input>
-                    </div>
+export default class CardProfile extends Component{
+    constructor(props){
+        super(props)
+        this.setState= {
+            name:'',
+            email:''
+        }
+    }
 
-                    <div className='form-group'>
-                        <input className="input-g form-control" placeholder="Contraseña actual" ></input>
-                    </div>
-                    <div className='form-group'>
-                        <input className="input-g form-control" placeholder="Nueva contraseña" ></input>
-                    </div>
-                    <div className='d-flex justify-content-between '>
-                        <h2 className='update-photo m-0'> Actualiza foto de perfil</h2>
-                        <button className='btn-update'>SUBIR FOTO</button>
-                    </div>
-
-                </form>
-
+    render(){
+        return (
+            <div class="card-profile">
+                <div className='card-cuenta p-4' >
+                    <h2 className='title-user'>  CUENTA </h2>
+                    <form className=''>
+                        <div className='form-group'>
+                            <input className="input-g form-control" placeholder="Nombre" ></input>
+                        </div>
+    
+                        <div className='form-group'>
+                            <input className="input-g form-control" placeholder="Contraseña actual" ></input>
+                        </div>
+                        <div className='form-group'>
+                            <input className="input-g form-control" placeholder="Nueva contraseña" ></input>
+                        </div>
+                        <div className='d-flex justify-content-between '>
+                            <h2 className='update-photo m-0'> Actualiza foto de perfil</h2>
+                            <button className='btn-update'>SUBIR FOTO</button>
+                        </div>
+    
+                    </form>
+    
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
+    
 }
-export default CardProfile;

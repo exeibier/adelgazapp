@@ -12,3 +12,9 @@
 .text-fisionomia{
     font-size: 20px;
 }
+.btn-send{
+    background: #71DB77;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border:0px;
+}

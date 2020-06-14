@@ -1,5 +1,6 @@
 const URL_BASE = 'http://localhost:8082/'
 const userId = localStorage.getItem('authIdUser')
+const testId = localStorage.getItem('authIdTestUser')
 
 function LogIn(data) {
     const URL = `${URL_BASE}auth/login`;
@@ -38,4 +39,17 @@ function LogIn(data) {
     })
 }
 
-export {LogIn, SignUp, PostTest};
+function GetTest(data){
+  const URL = `${URL_BASE}physicalDetails/${testId}`;
+  console.log(data)
+  return fetch(URL,{
+      method:"GET",
+      body: JSON.stringify(data),
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
+
+export {LogIn, SignUp, PostTest, GetTest};

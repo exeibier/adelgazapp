@@ -40,6 +40,7 @@ export default class CardTest extends Component {
       let response = await PostTest(data);
       let responseJSON = await response.json();
       if (responseJSON.success) {
+        localStorage.setItem("authIdTestUser", responseJSON.data.idTest);
         this.setState({
           success: true,
         });
@@ -133,7 +134,7 @@ export default class CardTest extends Component {
                                     ¿Cuál es tu nivel de actividad física?
                                        </li>
                                 <div className='d-flex justify-content-between form-group'>
-                                  <select class="form-control" name={'exercice'} value={exercise} onChange={this.handleSelect}>
+                                  <select class="form-control" name={'exercise'} value={exercise} onChange={this.handleSelect}>
                                     <option value='pocoActivo'>Poco activo</option>
                                     <option value='activo'>activo</option>
                                     <option value='muyActivo'>Muy activo</option>
@@ -146,7 +147,7 @@ export default class CardTest extends Component {
                                    <img className='img-grasa' src='https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn302/wp-content/uploads/2017/12/body-type_workout-1200x800.jpg'/>
                                   </div>        
                                 <div className='d-flex justify-content-between form-group'>
-                                  <select class="form-control" name={'fatPercantage'} value={fatPercentage} onChange={this.handleSelect}>
+                                  <select class="form-control" name={'fatPercentage'} value={fatPercentage} onChange={this.handleSelect}>
                                     <option value='delgadezAceptable'>Delgado</option>
                                     <option value='pesoNormal'>Normal</option>
                                     <option valie='sobrePeso'>Sobrepeso</option>

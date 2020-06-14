@@ -17,20 +17,20 @@ export default class HomeCarousel extends Component {
                 <Carousel autoPlay infiniteLoop useKeyboardArrows showThumbs={false} showArrows={false} showStatus={false} stopOnHover interval={2000} className='slider'>
                   <div className='my-slide-1'>
                       <div className='text-wrapper'>
-                        <h2>¿Qué es Fit U?</h2>
-                        <p>Legend</p>
+                        <h2>Fit U</h2>
+                        <p>Come sano y cumple tus objetivos</p>
                       </div>                      
                   </div>
                   <div className='my-slide-2'>
                       <div className='text-wrapper'>
                         <h2>¿Qué es Fit U?</h2>
-                        <p>Legend</p>
+                        <p></p>
                       </div>                      
                   </div>
                   <div className='my-slide-3'>
                       <div className='text-wrapper'> 
                         <h2>¿Qué es Fit U?</h2>
-                        <p>Legend</p>
+                        <p></p>
                       </div>                      
                   </div>
                 </Carousel>
