@@ -31,20 +31,25 @@ export default class Diets extends Component {
   render() {
     const allDiets = this.state.eatingPlans[0];
     const { diets } = allDiets;
-    
-    const renderDiets = (diets && diets.length !== 0)?diets.map((item, index) => {
-      console.log(item)
-      return (
-        <div className="col-12">
-          <h2>{`Día ${index + 1}`}</h2>
-          <div class="row">
-            <div class="col-12">
-              <CardDiets dishes= { item } />
-            </div>
-          </div>
-        </div>
-      );
-    }) : null
+
+    const renderDiets =
+      diets && diets.length !== 0
+        ? diets.map((item, index) => {
+            console.log(item);
+            return (
+              <div className="container">
+                <div className="col-12 diets-card">
+                  <h2>{`Día ${index + 1}`}</h2>
+                  <div class="row">
+                    <div class="col-12">
+                      <CardDiets dishes={item} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })
+        : null;
 
     return (
       <div className="diet-wrapper">
@@ -55,9 +60,7 @@ export default class Diets extends Component {
           title={"PLAN ALIMENTICIO"}
         />
         <div className="container diet  mb-5 mt-5">
-          <div className="row">
-            {renderDiets}
-          </div>
+          <div className="row">{renderDiets}</div>
         </div>
         <div className="car-button">
           <button>

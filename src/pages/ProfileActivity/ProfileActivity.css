@@ -2,7 +2,6 @@
     padding-top: 100px;
     width: 1440px;
     height: 180px;
-    background-color:#FBFAF4;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -13,15 +12,22 @@
     margin:auto;
    
 }
-
-.btn-view{
+.btn-view Link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.btn-view {
     background: #92c246;
     border-radius: 5px;
-    color: #FFFFFF;
     border:0px;
-    width:180px;
     font-weight: bold;
+    color: #FFFFFF;
+    display: block;
+    width: 150px;
+    text-decoration: none;
 }
+
+
 
 
 .data-plan{

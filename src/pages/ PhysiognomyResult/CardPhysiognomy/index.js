@@ -80,7 +80,7 @@ export default class CardPhysiognomy extends Component {
                         <h3 class="text-justify text-fisionomia p-3">{message}</h3>
                     </div>
                 </div>
-                <div className='btn-send '>
+                <div className='btn-send-1 '>
                     <a href='/activity'>CONTINUAR</a>
                 </div>
 

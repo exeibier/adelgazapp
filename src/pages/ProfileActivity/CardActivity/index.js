@@ -42,9 +42,6 @@ export default class CardActivity extends Component {
                             <p className='text-dark'>{lastName}</p>
                         </div>
                     </div>
-                    <div className='d-flex justify-content-between align-items-center p-3'>
-                        <button className='btn-change '>CAMBIAR DATOS</button>
-                    </div>
     
                 </div>
             </div>

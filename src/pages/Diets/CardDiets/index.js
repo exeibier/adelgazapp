@@ -15,23 +15,30 @@ export default class CardDiets extends Component {
       <div>
         <div class="table">
           <div className="row">
-            <div className="border-0 col-6">
-              <p>{allDishes[0].foodType}</p>
+            <div className="col-4">
+              <h3>{allDishes[0].foodType}</h3>
             </div>
-            <div className="border-0 col-6">
-              <p>{allDishes[0].foodName}</p>
+            <div className="col-4">
+              <h3>Platillo</h3>
+            </div>
+            <div className="col-4">
+              <h3>Ingredientes</h3>
             </div>
           </div>
           <div className="row">
-            <div className="border-0 col-6">
+            <div className="col-4">
               <img className="icon-food" src="../img/food.png"></img>
             </div>
-            <div className="border-0 ingredient col-6">
+            <div className="col-4">
+              <p>{allDishes[0].foodName}</p>
+            </div>
+            <div className="ingredient col-4">
               {allDishes[0].ingredients.map((item) => {
                 return (
                   <>
-                    <p>{item.name}</p>
-                    <p>{`${item.grams} gr`}</p>
+                    <p>
+                      {item.name} {`${item.grams} gr`}
+                    </p>
                   </>
                 );
               })}
@@ -40,23 +47,30 @@ export default class CardDiets extends Component {
         </div>
         <div class="table">
           <div className="row">
-            <div className="border-0 col-6">
-              <p>{allDishes[1].foodType}</p>
+            <div className="col-4">
+              <h3>{allDishes[1].foodType}</h3>
             </div>
-            <div className="border-0 col-6">
-              <p>{allDishes[1].foodName}</p>
+            <div className="col-4">
+              <h3>Platillo</h3>
+            </div>
+            <div className="col-4">
+              <h3>Ingredientes</h3>
             </div>
           </div>
           <div className="row">
-            <div className="border-0 col-6">
+            <div className="col-4">
               <img className="icon-food" src="../img/food.png"></img>
             </div>
-            <div className="border-0 ingredient col-6">
+            <div className="col-4">
+              <p>{allDishes[1].foodName}</p>
+            </div>
+            <div className="ingredient col-4">
               {allDishes[1].ingredients.map((item) => {
                 return (
                   <>
-                    <p>{item.name}</p>
-                    <p>{`${item.grams} gr`}</p>
+                    <p>
+                      {item.name} {`${item.grams} gr`}
+                    </p>
                   </>
                 );
               })}
@@ -65,23 +79,30 @@ export default class CardDiets extends Component {
         </div>
         <div class="table">
           <div className="row">
-            <div className="border-0 col-6">
-              <p>{allDishes[2].foodType}</p>
+            <div className="col-4">
+              <h3>{allDishes[2].foodType}</h3>
             </div>
-            <div className="border-0 col-6">
-              <p>{allDishes[2].foodName}</p>
+            <div className="col-4">
+              <h3>Platillo</h3>
+            </div>
+            <div className="col-4">
+              <h3>Ingredientes</h3>
             </div>
           </div>
           <div className="row">
-            <div className="border-0 col-6">
+            <div className="col-4">
               <img className="icon-food" src="../img/food.png"></img>
             </div>
-            <div className="border-0 ingredient col-6">
+            <div className="col-4">
+              <p>{allDishes[2].foodName}</p>
+            </div>
+            <div className="ingredient col-4">
               {allDishes[2].ingredients.map((item) => {
                 return (
                   <>
-                    <p>{item.name}</p>
-                    <p>{`${item.grams} gr`}</p>
+                    <p>
+                      {item.name} {`${item.grams} gr`}
+                    </p>
                   </>
                 );
               })}
