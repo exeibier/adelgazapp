@@ -12,9 +12,18 @@
 .text-fisionomia{
     font-size: 20px;
 }
-.btn-send{
-    background: #71DB77;
+.btn-send {
+    margin: 10px 0;
+    padding: 5px 10px;
+    text-align: center;
+    display: inline-flex;
+  
+}
+.btn-send a {
+    color: inherit;
+    text-decoration: inherit;
+    background: #92c246;
     border-radius: 5px;
     color: #FFFFFF;
-    border:0px;
+    border:0px
 }

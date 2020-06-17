@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import {GetTest} from '../../../services/services'
 
 //CSS
@@ -45,10 +46,12 @@ export default class CardPhysiognomy extends Component {
             })
         }
     }
+  
     render(){
         const title = localStorage.getItem('titlePhys')
         const message = localStorage.getItem('messagePhys')
-        const { endomorph, mesomorph, ectomorph } = this.state 
+        const { endomorph, mesomorph, ectomorph, isEatingPlan } = this.state 
+      
        
         return (
             <div>
@@ -77,7 +80,9 @@ export default class CardPhysiognomy extends Component {
                         <h3 class="text-justify text-fisionomia p-3">{message}</h3>
                     </div>
                 </div>
-            <button className='btn-send my-3 btn-block' type='submit'>ENVIAR</button>
+                <div className='btn-send '>
+                    <a href='/activity'>CONTINUAR</a>
+                </div>
 
             </div>
             

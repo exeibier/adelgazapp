@@ -22,7 +22,7 @@ export default class Home extends Component {
             <div className='container'>
               <div className='row'>
                 <div className='col-12 col-lg-6 image-us'>
-                  <img src='../img/logo.jpeg'/>
+                  <img src='../img/logo.png'/>
                 </div>
                 <div className='col-12 col-lg-6'>
                   <h2>NOSOTROS</h2>
@@ -66,7 +66,7 @@ export default class Home extends Component {
                 </div>
                 <div className='col-12 col-lg-4'>
                   <ShopHomeCard 
-                    imageUrl={'https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/quick-chicken-and-hummus-bowl.jpg'}
+                    imageUrl={'https://images.ctfassets.net/wy4h2xf1swlt/asset_63256/116b0576c45691f96b78d8d6f85dd314/iStock-862477938.jpg'}
                     description={'Encuentra exactamente el producto que buscas para tu plan.'}
                   />
                 </div>

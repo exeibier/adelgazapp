@@ -3,7 +3,7 @@
     bottom: 0;
     width: 100%;
     position: relative;
-    color:#71DB77;
+    color:#92c246;
 }
 
 footer img {
@@ -31,7 +31,7 @@ footer .social{
     text-align: right;
 }
 footer .social a{
-    color:#71DB77;
+    color:#92c246;
     text-decoration: none;
     font-size: 39px;
     text-align: left;

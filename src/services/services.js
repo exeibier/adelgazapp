@@ -40,7 +40,7 @@ function LogIn(data) {
 }
 
 function GetTest(data){
-  const URL = `${URL_BASE}physicalDetails/${testId}`;
+  const URL = `${URL_BASE}physicalDetails/test/${testId}`;
   console.log(data)
   return fetch(URL,{
       method:"GET",
@@ -51,5 +51,16 @@ function GetTest(data){
       mode: "cors"
   })
 }
+function GetEatingPlan(data){
+  const URL = `${URL_BASE}physicalDetails/${userId}`;
+  return fetch(URL,{
+      method:"GET",
+      body: JSON.stringify(data),
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
 
-export {LogIn, SignUp, PostTest, GetTest};
+export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan};

@@ -70,7 +70,7 @@ export default class CardTest extends Component {
         window.location.href = "/fisionomia";
       }
       return (
-        <form className="border border-dark p-3 rounded test-form" onSubmit={this.handleFormSubmit}>
+        <form className="border p-3 rounded test-form" onSubmit={this.handleFormSubmit}>
                             <ol>
                                 <li className='data-form'>
                                     ¿Qué edad tienes?

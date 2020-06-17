@@ -34,10 +34,6 @@ export default class CardLogin extends Component {
     let response = await LogInService(data);
     let responseJSON = await response.json();
     if (responseJSON.success) {
-      // let keysToAdd = ['authTokenUser','authNameUser','authLastNamenUser','authIdUser','authIdTestUser']
-      // let responseData = responseJSON.data
-      // keysToAdd.forEach(k =>
-      //   localStorage.setItem(k, responseData))
       localStorage.setItem("authTokenUser", responseJSON.data.token);
       localStorage.setItem("authNameUser", responseJSON.data.name);
       localStorage.setItem("authLastNamenUser", responseJSON.data.lastName);
@@ -63,7 +59,7 @@ export default class CardLogin extends Component {
     if (idTest){
       window.location.href = "/test";
     } else if (success) {
-      window.location.href = "/";
+      window.location.href='/'
     }
     
     return (

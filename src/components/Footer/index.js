@@ -11,7 +11,7 @@ function Footer (){
             <div className='container'>
                 <div className='row'>
                     <div className='col-3 col-md-s3 image d-flex align-items-center'>
-                         <a href='/'><img src='../img/logo.jpeg'/></a>
+                         <a href='/'><img src='../img/logo.png'/></a>
                     </div>
                     <div className='col-9 col-md-6 contact d-flex flex-column justify-content-center'>
                         <div className='contact-p'>

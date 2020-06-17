@@ -22,13 +22,13 @@ export default class Menu extends Component {
         return(
             <div className='menu'>
                 <nav className='menu-nav '>
-                    <div className='menu-logo'><a href='/'><img src='../img/logo.jpeg' alt='logo'/></a></div>
+                    <div className='menu-logo'><a href='/'><img src='../img/logo.png' alt='logo'/></a></div>
                     <div className='menu-nav-items'>
                         <ul>
                         {
                             !isUserLogedIn ? (
                              <li>
-                                <Link to="/signup">Crear cuenta</Link>
+                                <Link to="/signup" className='btn-signup'>Crear cuenta</Link>
                              </li>
                              ) : (
                                 <li>

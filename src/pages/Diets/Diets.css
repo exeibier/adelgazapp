@@ -1,5 +1,7 @@
 
-
+.diet-wrapper {
+    height: 100%;
+}
 
 .list-food{
     list-style: none;
@@ -16,5 +18,17 @@
 .img-diet{
     width: 3000px;
 }
+.car-button button {
+    background-color: #92c246;
+    border: none;
+    border-radius: 10px;
+    padding:10px 40px;
+    color:#ffff;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+
 
   
