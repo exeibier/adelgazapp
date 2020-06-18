@@ -1,7 +1,5 @@
 .user-activity {
     padding-top: 100px;
-    width: 1440px;
-    height: 180px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -11,10 +9,6 @@
     display:block;
     margin:auto;
    
-}
-.btn-view Link:hover {
-    text-decoration: none;
-    color: inherit;
 }
 .btn-view {
     background: #92c246;
@@ -36,7 +30,7 @@
 
 }
 .activity{
-    height: 135vh;
+    height: 100vh;
 
 }
 
@@ -57,7 +51,7 @@
 }
 @media only screen and (max-device-width: 480px){
         .activity{
-            height: 220vh;
+            height: 105vh;
         }
         .btn-view{
             width: 60px;
