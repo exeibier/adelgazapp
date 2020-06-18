@@ -197,7 +197,7 @@ export default class CardTest extends Component {
             >
               <option value="adelgazar">Perder peso</option>
               <option value="volumen">Ganar musculo</option>
-              <option valie="tonificar">Comer saludable</option>
+              <option value="tonificar">Comer saludable</option>
             </select>
           </div>
         </ol>
