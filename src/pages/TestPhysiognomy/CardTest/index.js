@@ -165,6 +165,7 @@ export default class CardTest extends Component {
                                     <option valie='tonificar'>Comer saludable</option>
                                   </select>
                                 </div> 
+             </div>
                             </ol>
                             <button className='btn-send my-3 btn-block' type='submit'>ENVIAR</button>
                         </form>
