@@ -7,22 +7,17 @@
     color: #92c246;
 }
 
-.order{
-    height: 80vh;
+.order-1{
+  height: 100%;
 }
 @media only screen and (max-width: 768px) {
  
-    .order{
-      height: 600px;
-    }
+   
     
   }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-    .order{
-      height: 200vh;
-    
-    }
+   
     .table{
         padding-top: 300px;
     }

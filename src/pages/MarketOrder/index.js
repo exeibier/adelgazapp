@@ -8,16 +8,11 @@ export default class MarketOrder extends Component {
     }
     render() {
         return (
-            <div className='container order'>
+            <div className='container order-1'>
                 <div className='row'>
                     <div className='col-12 table' >
                         <h1 className='market-title'>CARRITO</h1>
-                        <CardOrder
-                        producto={'../img/fresa.jpeg'}
-                        precio={'$56.95'}
-                        cantidad={'550gr'}
-                        total={'$56.95'}
-                        />
+                        <CardOrder/>
                     </div>
 
                 </div>

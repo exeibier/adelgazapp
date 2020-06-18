@@ -1,6 +1,7 @@
 const URL_BASE = 'http://localhost:8082/'
 const userId = localStorage.getItem('authIdUser')
 const testId = localStorage.getItem('authIdTestUser')
+const eatingId = localStorage.getItem('idEatingPlan')
 
 function LogIn(data) {
     const URL = `${URL_BASE}auth/login`;
@@ -62,5 +63,16 @@ function GetEatingPlan(data){
       mode: "cors"
   })
 }
+function GetShoppingCart(data){
+  const URL = `${URL_BASE}shoppingCart/getTotalPriceBuy/${eatingId}`;
+  return fetch(URL,{
+      method:"GET",
+      body: JSON.stringify(data),
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
 
-export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan};
+export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan, GetShoppingCart};

@@ -20,6 +20,7 @@ export default class Diets extends Component {
     const responseJSON = await response.json();
     const { eatingPlans } = responseJSON.data;
     if (responseJSON.success) {
+      localStorage.setItem('idEatingPlan', eatingPlans[0]._id)
       this.setState({
         eatingPlans,
       });
@@ -35,7 +36,6 @@ export default class Diets extends Component {
     const renderDiets =
       diets && diets.length !== 0
         ? diets.map((item, index) => {
-            console.log(item);
             return (
               <div className="container">
                 <div className="col-12 diets-card">
