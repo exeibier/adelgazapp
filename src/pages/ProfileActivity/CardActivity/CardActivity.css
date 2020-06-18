@@ -1,7 +1,9 @@
 .card-activity input{
     text-align: center;
 }
-
+.card-activity p{
+    font-size: 20px;
+}
 .card-activity-user{
     background: #FFFFFF;
     border: 1px solid #ACACAC;
@@ -9,6 +11,9 @@
     box-shadow: 5px 5px 10px rgba(172, 172, 172, 0.25);
     border-radius: 10px;
     text-align: center;
+}
+.card-activity .text-activity-1{
+    padding-top: 29px ;
 }
 .title-account{
      color: #92c246;

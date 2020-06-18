@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
-//Services
-import {getUserData} from '../../../services/services'
 //CSS
 import './CardActivity.css'
-import { faLastfmSquare } from '@fortawesome/free-brands-svg-icons';
 
 export default class CardActivity extends Component {
     constructor(props){
@@ -32,13 +29,13 @@ export default class CardActivity extends Component {
                     <h2 className='title-account'>  CUENTA </h2>
                     <div className='d-flex'>
                         <h2 className='data-account p-5'> Nombre</h2>
-                        <div className='mt-3 text-activity'>
+                        <div className='mt-3 text-activity-1'>
                             <p className='text-dark'>{name}</p>
                         </div>
                     </div>
                     <div className='d-flex '>
                         <h2 className='data-account p-5 '>Apellido</h2>
-                        <div className='mt-3 text-activity'>
+                        <div className='mt-3 text-activity-1'>
                             <p className='text-dark'>{lastName}</p>
                         </div>
                     </div>

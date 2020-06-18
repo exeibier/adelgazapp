@@ -66,8 +66,8 @@ export default class Home extends Component {
                   <h2>PLAN ALIMENTICIO</h2>
                   <div className="text-home-wrapper">
                     <p>
-                      Crea tu plan de alimentación con solo responder nuestro test,
-                      recibe toda una semana de dieta para que cumplas tus
+                      Crea tu plan de alimentación con solo responder nuestro
+                      test, recibe toda una semana de dieta para que cumplas tus
                       objetivos mientras sigues cumpliendo tus responsabilidades
                       diarias
                     </p>
@@ -126,13 +126,6 @@ export default class Home extends Component {
                     }
                   />
                 </div>
-              </div>
-              <div className="btn-home-wrapper">
-                <a href="#">
-                  <div className="btn-home">
-                    <p>Ver más</p>
-                  </div>
-                </a>
               </div>
             </div>
           </div>
