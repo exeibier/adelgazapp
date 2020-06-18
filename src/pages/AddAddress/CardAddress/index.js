@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+//Services
+import {PostAddress} from '../../../services/services'
+
 //CSS
 import "./CardAddress.css";
 
@@ -8,15 +11,16 @@ export default class CardAddress extends Component {
     super(props);
     this.state = {
       street: "",
-      CP: 0,
+      cp: 0,
       numberExt: 0,
       numberInt: 0,
       colonia: "",
       city: "",
       reference: "",
+      success:false
     };
     this.handleInputAdress = this.handleInputAdress.bind(this);
-    // this.handleSubmitAdress = this.handleSubmitAdress.bind(this)
+    this.handleSubmitAdress = this.handleSubmitAdress.bind(this)
   }
 
   handleInputAdress({ target: { name, value } }) {
@@ -25,52 +29,56 @@ export default class CardAddress extends Component {
     });
   }
 
-  handleSubmitAdress() {
-    // let response = await GetShoppingCart();
-    // const responseJSON = await response.json();
-    // console.log(responseJSON);
-    // if (responseJSON.success) {
-    //   const total = responseJSON.data.reduce((prev, curr)=>{
-    //     console.log(prev, curr)
-    //     return curr.price + prev
-    //   },0)
-    //   this.setState({
-    //     data: responseJSON.data,
-    //     total
-    //   });
-    // } else if (!responseJSON.success) {
-    //   this.setState({});
-    // }
+  async handleSubmitAdress(event) {
+    event.preventDefault()
     const {
       street,
-      CP,
+      cp,
       numberExt,
       numberInt,
       colonia,
       city,
       reference,
+      success
     } = this.state;
-    this.setState({
+    const data = this.setState({
       street,
-      CP,
+      cp,
       numberExt,
       numberInt,
       colonia,
       city,
       reference,
+      success
     });
+    let response = await PostAddress(data);
+    let responseJSON = await response.json();
+    if (responseJSON.success) {
+      this.setState({
+        success: true,
+      });
+    } else if (!responseJSON.success) {
+      this.setState({
+        success: false,
+      });
+    }
   }
+  
 
   render() {
     const {
       street,
-      CP,
+      cp,
       numberExt,
       numberInt,
       colonia,
       city,
       reference,
+      success
     } = this.state;
+    if (success) {
+      window.location.href = "/payment";
+    }
     return (
       <div class="card">
         <div>
@@ -93,9 +101,9 @@ export default class CardAddress extends Component {
                 <input
                   class="form-control"
                   type="number"
-                  value={CP}
+                  value={cp}
                   onChange={this.handleInputAdress}
-                  name={"CP"}
+                  name={"cp"}
                   placeholder="C.P."
                 />
               </div>
@@ -157,5 +165,6 @@ export default class CardAddress extends Component {
         </div>
       </div>
     );
+    }
   }
-}
+

@@ -65,6 +65,7 @@ function GetEatingPlan(data){
 }
 function GetShoppingCart(data){
   const URL = `${URL_BASE}shoppingCart/getTotalPriceBuy/${eatingId}`;
+  console.log(URL)
   return fetch(URL,{
       method:"GET",
       body: JSON.stringify(data),
@@ -74,5 +75,16 @@ function GetShoppingCart(data){
       mode: "cors"
   })
 }
+function PostAddress(data){
+  const URL = `${URL_BASE}direction/${userId}`;
+  return fetch(URL,{
+      method:"POST",
+      body: JSON.stringify(data),
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
 
-export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan, GetShoppingCart};
+export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan, GetShoppingCart, PostAddress};

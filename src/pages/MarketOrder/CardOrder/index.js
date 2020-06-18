@@ -13,7 +13,7 @@ export default class CardOrder extends Component {
     super(props);
     this.state = {
       data: [],
-      total:localStorage.getItem('totalCart')
+      total:localStorage.getItem('totalCart') || 0
       
   
     };
@@ -25,7 +25,6 @@ export default class CardOrder extends Component {
     console.log(responseJSON);
     if (responseJSON.success) {
       const total = responseJSON.data.reduce((prev, curr)=>{
-        console.log(prev, curr)
         return curr.price + prev
       },0)
       let totalFixed = total.toFixed(2)
