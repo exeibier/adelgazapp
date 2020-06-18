@@ -28,15 +28,14 @@
     font-size: 20px;
           
 }
-.btn-change{
+.btn-change a{
+    padding:5px 15px;
+    color: inherit;
+    text-decoration: inherit;
     background: #92c246;
     border-radius: 5px;
     color: #FFFFFF;
-    border:0px;
-    width:180px;
-    font-weight: bold;
-    display:block;
-    margin:auto;
+    border:0px
     
 
 }

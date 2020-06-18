@@ -12,22 +12,9 @@ export default class PaymentPayPal extends Component {
     render() {
         const order = {
             customer:'Xabier',
-            total:'550.00',
+            total:localStorage.getItem('totalCart'),
             items: [
-                {
-                    sku:'112',
-                    name: 'Salmón',
-                    price: '300.00',
-                    quantity: 1,
-                    currency: 'MXN'
-                },
-                {
-                    sku:'99',
-                    name: 'Fresa',
-                    price: '125.00',
-                    quantity: 2,
-                    currency: 'MXN'    
-                }
+               
             ]
         };
         return (

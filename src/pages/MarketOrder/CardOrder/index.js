@@ -13,7 +13,9 @@ export default class CardOrder extends Component {
     super(props);
     this.state = {
       data: [],
-      total: 0
+      total:localStorage.getItem('totalCart')
+      
+  
     };
   }
 
@@ -26,9 +28,11 @@ export default class CardOrder extends Component {
         console.log(prev, curr)
         return curr.price + prev
       },0)
+      let totalFixed = total.toFixed(2)
+      totalFixed = parseFloat(totalFixed)
+      localStorage.setItem('totalCart', totalFixed)
       this.setState({
         data: responseJSON.data,
-        total
       });
     } else if (!responseJSON.success) {
       this.setState({});
@@ -37,7 +41,6 @@ export default class CardOrder extends Component {
 
   render() {
     const {total} = this.state
-    console.log(total)
     const allIngridients = this.state.data;
     console.log(allIngridients);
     const shoppingCart = allIngridients.map((item, index) => {
@@ -70,14 +73,14 @@ export default class CardOrder extends Component {
             <tbody>
               {shoppingCart}
               <tr className='text-right'>
-                <td colSpan='4'>Total: ${total.toFixed(2)}</td>
+                <td colSpan='4'>Total: ${total.substring(0, total.indexOf('.')+3)}</td>
               </tr>
             
             </tbody>
           </table>
         </div>
         <div className='d-flex justify-content-end'>
-          <Link to={`/address?total=${total}`} className="btn-order  payment btn-secondary mt-3 py-1 px-3">CONTINUAR</Link>
+          <Link to={'/address'} className="btn-order  payment btn-secondary mt-3 py-1 px-3">CONTINUAR</Link>
         </div>
       </div>
     );

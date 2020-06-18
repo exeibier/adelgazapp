@@ -3,6 +3,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 import { GetEatingPlan } from "../../services/services";
+import {
+  Link
+} from 'react-router-dom';
 
 import "./Diets.css";
 import CardDiets from "./CardDiets";
@@ -63,10 +66,10 @@ export default class Diets extends Component {
           <div className="row">{renderDiets}</div>
         </div>
         <div className="car-button">
-          <button>
+          <Link to='/order'>
             Ve tu carrito
             <FontAwesomeIcon icon={faShoppingCart} />
-          </button>
+          </Link>
         </div>
       </div>
     );
