@@ -29,11 +29,11 @@ const HiddenMenu = props => {
                          {
                             !isUserLogedIn ? (
                              <li>
-                                <Link to="/signup" >Crear cuenta</Link>
+                                <Link to="/signup" className='btn-signup'>Crear cuenta</Link>
                              </li>
                              ) : (
                                 <li>
-                                <Link to="/activity" className='btn-signup' >Perfil</Link>
+                                <Link to="/activity" >Perfil</Link>
                              </li>   
                              )
                         } 
