@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 //Services
-import {PostAddress} from '../../../services/services'
+import { PostAddress } from "../../../services/services";
 
 //CSS
 import "./CardAddress.css";
@@ -17,10 +17,10 @@ export default class CardAddress extends Component {
       colonia: "",
       city: "",
       reference: "",
-      success:false
+      success: false,
     };
     this.handleInputAdress = this.handleInputAdress.bind(this);
-    this.handleSubmitAdress = this.handleSubmitAdress.bind(this)
+    this.handleSubmitAdress = this.handleSubmitAdress.bind(this);
   }
 
   handleInputAdress({ target: { name, value } }) {
@@ -30,7 +30,7 @@ export default class CardAddress extends Component {
   }
 
   async handleSubmitAdress(event) {
-    event.preventDefault()
+    event.preventDefault();
     const {
       street,
       cp,
@@ -39,7 +39,7 @@ export default class CardAddress extends Component {
       colonia,
       city,
       reference,
-      success
+      success,
     } = this.state;
     const data = this.setState({
       street,
@@ -49,11 +49,16 @@ export default class CardAddress extends Component {
       colonia,
       city,
       reference,
-      success
+      success,
     });
     let response = await PostAddress(data);
     let responseJSON = await response.json();
+    console.log(responseJSON);
     if (responseJSON.success) {
+      localStorage.setItem(
+        "isUserDirection",
+        responseJSON.data.direction.direction
+      );
       this.setState({
         success: true,
       });
@@ -63,7 +68,6 @@ export default class CardAddress extends Component {
       });
     }
   }
-  
 
   render() {
     const {
@@ -74,19 +78,19 @@ export default class CardAddress extends Component {
       colonia,
       city,
       reference,
-      success
+      success,
     } = this.state;
     if (success) {
       window.location.href = "/payment";
     }
     return (
-      <div class="card">
+      <div class="card form-address">
         <div>
           <div className="col-12">
             <div className="car">
               <img className="delivery " src="../img/transport.png"></img>
             </div>
-            <form onSubmit={this.handleSubmitAdress}>
+            <form onSubmit={this.handleSubmitAdress} className="p-5">
               <div class="form-group">
                 <input
                   class="form-control"
@@ -95,6 +99,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"street"}
                   placeholder="Calle"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -105,6 +110,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"cp"}
                   placeholder="C.P."
+                  required
                 />
               </div>
               <div class="form-group">
@@ -115,6 +121,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"numberExt"}
                   placeholder="Num.exterior"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -125,6 +132,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"numberInt"}
                   placeholder="Num.interior"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -135,6 +143,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"colonia"}
                   placeholder="Colonia"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -145,6 +154,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"city"}
                   placeholder="Ciudad"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -155,16 +165,18 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"reference"}
                   placeholder="Referencia"
+                  required
                 />
               </div>
-              <button className="delivery-btn my-3 btn-block" type="submit">
-                ENVIAR
-              </button>
+              <div className="btn-address-wrapper">
+                <button className="delivery-btn my-3 btn-block" type="submit">
+                  ENVIAR
+                </button>
+              </div>
             </form>
           </div>
         </div>
       </div>
     );
-    }
   }
-
+}

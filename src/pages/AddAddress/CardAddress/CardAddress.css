@@ -5,13 +5,18 @@
     margin-top:9px
 }
 .delivery-btn{
+    display: inline;
     background: #92c246;
     border-radius: 5px;
     color: #FFFFFF;
     border:0px;
+    width: 100px;
 }
 
 .car {
     text-align: center;
     padding: 30px;
+}
+.btn-address-wrapper {
+    text-align: center;
 }

@@ -68,7 +68,7 @@ export default class Diets extends Component {
         <div className="container diet  mb-5 mt-5">
           <div className="row">{renderDiets}</div>
         </div>
-        <div className="car-button">
+        <div className="card-1-button">
           <Link to='/order'>
             Ve tu carrito
             <FontAwesomeIcon icon={faShoppingCart} />

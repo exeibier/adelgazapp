@@ -4,10 +4,16 @@ import React, { Component } from 'react'
 import PayPalCheckoutButton from '../../components/PaypalCheckoutButton'
 //CSS
 import "./PaymentPayPal.css"
-import PaymentCard from './PaymentCard'
 export default class PaymentPayPal extends Component {
     constructor(props) {
         super(props)
+        this.state={
+
+        }
+    }
+
+   async componentDidMount(){
+
     }
     render() {
         const order = {
@@ -30,7 +36,7 @@ export default class PaymentPayPal extends Component {
                                 <div className='col-12 col-md-6'>
                                     <div class="card card-envio">
                                         <div class="card-body order-shop">
-                                            <p> Tu pedido llegará aproximadamente a las: </p>
+                                            <p> Tu pedido llegará a la siguiente dirección: </p>
                                         </div>
                                     </div>
                                     <div className='btn-payment'>

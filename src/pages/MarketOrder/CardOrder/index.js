@@ -32,6 +32,7 @@ export default class CardOrder extends Component {
       localStorage.setItem('totalCart', totalFixed)
       this.setState({
         data: responseJSON.data,
+        total: totalFixed
       });
     } else if (!responseJSON.success) {
       this.setState({});
@@ -72,7 +73,7 @@ export default class CardOrder extends Component {
             <tbody>
               {shoppingCart}
               <tr className='text-right'>
-                <td colSpan='4'>Total: ${total.substring(0, total.indexOf('.')+3)}</td>
+                <td colSpan='4'>Total: ${total}</td>
               </tr>
             
             </tbody>

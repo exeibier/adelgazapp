@@ -11,7 +11,7 @@ export default class AddAddress extends Component {
             <div className='container full-height mb-4 wrapper-delivery'>
             <div className='row full-height'>
                 <div className='col-12'>
-                    <p className='title '>DETALLES DE COMPRA</p>
+                    <p className='title '>AGREGA TU DIRECCIÓN</p>
                     <CardAddress
                     nombre={'nombre'}
                     apellido={'apellido'}

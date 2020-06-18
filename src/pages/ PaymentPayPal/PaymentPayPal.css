@@ -9,7 +9,9 @@
     height: 80vh;
     
 }
-
+.wrapper-payment .order-shop p{
+    color: #000000;
+}
 .title-paypal{
     font-size: 30px;
     color:#92c246;
