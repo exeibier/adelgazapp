@@ -91,7 +91,7 @@ export default class CardSignup extends Component {
             <div className="form-group ">
               <input
                 className="input-email form-control "
-                placeholder="contraseña"
+                placeholder="Contraseña"
                 type={"password"}
                 value={password}
                 onChange={this.handleInput}
