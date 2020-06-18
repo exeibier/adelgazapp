@@ -157,6 +157,7 @@ export default class CardTest extends Component {
                                 <li className='data-form'>
                                     ¿Cuál es tu objetivo?
                                         </li>
+
                                 <div className='d-flex justify-content-between form-group'>
                                   <select class="form-control" name={'objective'} value={objective} onChange={this.handleSelect}>
                                     <option value='adelgazar'>Perder peso</option>

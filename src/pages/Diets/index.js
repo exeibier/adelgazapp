@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
+
 import { GetEatingPlan } from "../../services/services";
 import {
   Link
@@ -17,6 +18,7 @@ export default class Diets extends Component {
       eatingPlans: [{ diets: [] }],
     };
   }
+
 
   async componentDidMount() {
     let response = await GetEatingPlan();
@@ -54,6 +56,7 @@ export default class Diets extends Component {
           })
         : null;
 
+
     return (
       <div className="diet-wrapper">
         <Header
@@ -75,3 +78,4 @@ export default class Diets extends Component {
     );
   }
 }
+
