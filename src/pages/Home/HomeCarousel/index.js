@@ -23,14 +23,14 @@ export default class HomeCarousel extends Component {
                   </div>
                   <div className='my-slide-2'>
                       <div className='text-wrapper'>
-                        <h2>¿Qué es Fit U?</h2>
-                        <p></p>
+                        <h2>CREA TU PLAN</h2>
+                        <p>Come sano con una dieta personalizada</p>
                       </div>                      
                   </div>
                   <div className='my-slide-3'>
                       <div className='text-wrapper'> 
-                        <h2>¿Qué es Fit U?</h2>
-                        <p></p>
+                        <h2>COMPRA TU PLAN</h2>
+                        <p>Todo tu plan hasta la puerta de tu casa</p>
                       </div>                      
                   </div>
                 </Carousel>
