@@ -5,15 +5,16 @@ import Loader from "../../components/Loader";
 
 import { GetEatingPlan } from "../../services/services";
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import "./Diets.css";
 import CardDiets from "./CardDiets";
 import Header from "../../components/Header";
-export default class Diets extends Component {
+class Diets extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      eatingPlans: [{ diets: [] }],
+      eatingPlan: [{ diets: [] }],
       loading: true,
     };
   }
@@ -27,16 +28,15 @@ export default class Diets extends Component {
     });
   };
 
-  async componentDidMount() {
+  async  componentDidMount() {
     this.wait(2000);
-    let response = await GetEatingPlan();
-    const responseJSON = await response.json();
-    const { eatingPlans } = responseJSON.data;
-    console.log(eatingPlans);
+    let response = await GetEatingPlan(this.props.location.state.idEatingPlan);
+    let responseJSON = await response.json()
+    const { eatingPlan } = responseJSON.data;
+    console.log(responseJSON);
     if (responseJSON.success) {
-      localStorage.setItem("idEatingPlan", eatingPlans[0]._id);
       this.setState({
-        eatingPlans,
+        eatingPlan,
       });
     } else if (!responseJSON.success) {
       this.setState({});
@@ -44,7 +44,8 @@ export default class Diets extends Component {
   }
 
   render() {
-    const allDiets = this.state.eatingPlans[0];
+    const allDiets = this.state.eatingPlan;
+    console.log(this.state)
     const { diets } = allDiets;
     if (this.state.loading) return <Loader />;
     const renderDiets =
@@ -77,7 +78,10 @@ export default class Diets extends Component {
           <div className="row">{renderDiets}</div>
         </div>
         <div className="card-1-button">
-          <Link to="/order">
+          <Link to={{
+                    pathname: "/order",
+                    state: { idEatingPlan: this.props.location.state.idEatingPlan},
+                  }}>
             Ve tu carrito
             <FontAwesomeIcon icon={faShoppingCart} />
           </Link>
@@ -86,3 +90,5 @@ export default class Diets extends Component {
     );
   }
 }
+
+export default withRouter(Diets);

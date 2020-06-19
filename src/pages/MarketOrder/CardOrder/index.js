@@ -2,13 +2,15 @@ import React, { Component } from "react";
 
 //Services
 import { GetShoppingCart } from "../../../services/services";
+import { withRouter } from "react-router-dom";
+
 
 //CSS
 import "./CardOrder.css";
 import {
   Link
 } from 'react-router-dom';
-export default class CardOrder extends Component {
+ class CardOrder extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +22,7 @@ export default class CardOrder extends Component {
   }
 
   async componentDidMount() {
-    let response = await GetShoppingCart();
+    let response = await GetShoppingCart(this.props.location.state.idEatingPlan);
     const responseJSON = await response.json();
     console.log(responseJSON);
     if (responseJSON.success) {
@@ -86,3 +88,4 @@ export default class CardOrder extends Component {
     );
   }
 }
+export default withRouter(CardOrder);

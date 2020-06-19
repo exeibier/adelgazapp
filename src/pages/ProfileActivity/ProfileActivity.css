@@ -30,13 +30,13 @@
 
 }
 .activity{
-    height: 100vh;
+    height: 100%;
 
 }
 
 @media only screen and (max-width: 768px) {
     .activity{
-        height: 180vh;
+        height: 200vh;
     }
     .btn-view{
         width: 120px;
@@ -49,15 +49,7 @@
     }
     
 }
-@media only screen and (max-device-width: 480px){
-        .activity{
-            height: 105vh;
-        }
-        .btn-view{
-            width: 60px;
-        }
-       
-    }
+
   
   
   

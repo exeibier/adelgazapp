@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import {GetTest} from '../../../services/services'
+import {GetPhysiognomy} from '../../../services/services'
 
 //CSS
 import './CardPhysiognomy.css'
@@ -17,11 +17,11 @@ export default class CardPhysiognomy extends Component {
     }
 
     async componentDidMount(){
-        let response = await GetTest();
+        let response = await GetPhysiognomy();
         let responseJSON = await response.json();
         if(responseJSON.success){
-            localStorage.setItem('titlePhys', responseJSON.data.type)
-            localStorage.setItem('messagePhys', responseJSON.data.description)
+            localStorage.setItem('titlePhys', responseJSON.data.physionomy.type)
+            localStorage.setItem('messagePhys', responseJSON.data.physionomy.description)
             if(localStorage.getItem('titlePhys') === 'Ectomorfo'){
                 this.setState({
                     ectomorph: true
@@ -50,7 +50,7 @@ export default class CardPhysiognomy extends Component {
     render(){
         const title = localStorage.getItem('titlePhys')
         const message = localStorage.getItem('messagePhys')
-        const { endomorph, mesomorph, ectomorph, isEatingPlan } = this.state 
+        const { endomorph, mesomorph, ectomorph } = this.state 
       
        
         return (

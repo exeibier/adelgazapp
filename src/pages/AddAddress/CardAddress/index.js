@@ -39,26 +39,13 @@ export default class CardAddress extends Component {
       colonia,
       city,
       reference,
-      success,
     } = this.state;
-    const data = this.setState({
-      street,
-      cp,
-      numberExt,
-      numberInt,
-      colonia,
-      city,
-      reference,
-      success,
-    });
+    const data = {...this.state}
+    console.log(data)
     let response = await PostAddress(data);
     let responseJSON = await response.json();
     console.log(responseJSON);
     if (responseJSON.success) {
-      localStorage.setItem(
-        "isUserDirection",
-        responseJSON.data.direction.direction
-      );
       this.setState({
         success: true,
       });
@@ -132,7 +119,7 @@ export default class CardAddress extends Component {
                   onChange={this.handleInputAdress}
                   name={"numberInt"}
                   placeholder="Num.interior"
-                  required
+                  
                 />
               </div>
               <div class="form-group">

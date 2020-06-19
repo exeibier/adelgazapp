@@ -17,13 +17,20 @@
     color:#92c246;
     padding-bottom: 10px;
 }
+.order-shop ul {
+    padding:0
+}
+
+.order-shop ul li{
+    list-style: none;
+}
 
 
 
 @media only screen and (max-width: 768px) {
 
   .wrapper-payment{
-      height: 100vh;
+      height: 120vh;
   }
   
 }

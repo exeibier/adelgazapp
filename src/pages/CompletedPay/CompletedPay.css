@@ -1,0 +1,31 @@
+.completed-pay{
+    background-color: #1c1c1c;
+    height: 86vh;
+    padding-top: 160px;
+}
+
+.btn-completed-pay{
+    padding-top: 40px;
+    margin: 20px 0 70px 0;
+    text-align: center;
+}
+.btn-completed-pay a {
+    background-color: #92c246;
+    border: none;
+    border-radius: 10px;
+    padding:10px 40px;
+    color:#ffff;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .btn-completed-pay a {
+        padding:10px 20px;
+        font-size: 20px;
+    }
+    .completed-pay{
+        height: 70vh;
+    }
+}

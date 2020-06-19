@@ -42,7 +42,7 @@ const PayPalCheckoutButton = ({order}) => {
     const onAuthorize = (data, actions) => {
         return actions.payment.execute()
         .then(response => {
-            console.log(response)
+            window.location.href='/payCompleted'
             alert(`El pago fue procesado correctamente, ID: ${response.id}`);
         })
         .catch (error => {

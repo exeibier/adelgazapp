@@ -1,7 +1,6 @@
-const URL_BASE = 'https://fitu-api.mybluemix.net/'
+const URL_BASE = 'http://fitu-api.mybluemix.net/'
 const userId = localStorage.getItem('authIdUser')
 const testId = localStorage.getItem('authIdTestUser')
-const eatingId = localStorage.getItem('idEatingPlan')
 const addressId = localStorage.getItem('isUserDirection')
 
 function LogIn(data) {
@@ -40,6 +39,18 @@ function LogIn(data) {
         mode: "cors"
     })
 }
+function GetPhysiognomy(data){
+  const URL = `${URL_BASE}physicalDetails/eatingPlan/${userId}`;
+  console.log(data)
+  return fetch(URL,{
+      method:"GET",
+      body: JSON.stringify(data),
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
 
 function GetTest(data){
   const URL = `${URL_BASE}physicalDetails/test/${testId}`;
@@ -53,22 +64,20 @@ function GetTest(data){
       mode: "cors"
   })
 }
-function GetEatingPlan(data){
-  const URL = `${URL_BASE}physicalDetails/${userId}`;
+function GetEatingPlan(idEatingPlan){
+  const URL = `${URL_BASE}eatingPlan/${idEatingPlan}`;
   return fetch(URL,{
       method:"GET",
-      body: JSON.stringify(data),
       headers: {
           "Content-type": "application/json",
       },
       mode: "cors"
   })
 }
-function GetShoppingCart(data){
-  const URL = `${URL_BASE}shoppingCart/getTotalPriceBuy/${eatingId}`;
+function GetShoppingCart(idEatingPlan){
+  const URL = `${URL_BASE}shoppingCart/getTotalPriceBuy/${idEatingPlan}`;
   return fetch(URL,{
       method:"GET",
-      body: JSON.stringify(data),
       headers: {
           "Content-type": "application/json",
       },
@@ -86,8 +95,18 @@ function PostAddress(data){
       mode: "cors"
   })
 }
-function GetAddress(data){
-  const URL = `${URL_BASE}direction/${userId}`;
+function GetAddress(){
+  const URL = `${URL_BASE}direction/userDirection/${userId}`;
+  return fetch(URL,{
+      method:"GET",
+      headers: {
+          "Content-type": "application/json",
+      },
+      mode: "cors"
+  })
+}
+function GetAllPlans(data){
+  const URL = `${URL_BASE}eatingPlan/allPlans/${userId}`;
   return fetch(URL,{
       method:"GET",
       body: JSON.stringify(data),
@@ -98,4 +117,4 @@ function GetAddress(data){
   })
 }
 
-export {LogIn, SignUp, PostTest, GetTest, GetEatingPlan, GetShoppingCart, PostAddress, GetAddress};
+export {LogIn, SignUp, PostTest, GetPhysiognomy, GetTest, GetEatingPlan, GetShoppingCart, PostAddress, GetAddress, GetAllPlans};

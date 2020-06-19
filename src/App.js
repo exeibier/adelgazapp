@@ -36,6 +36,7 @@ import PaymentPayPal from '../src/pages/ PaymentPayPal/'
 import Diets from '../src/pages/Diets'
 import PhysiognomyResult from '../src/pages/ PhysiognomyResult'
 import TestPreferences from '../src/pages/ TestPreferences'
+import CompletedPay from '../src/pages/CompletedPay'
 class App extends Component{
   constructor(props){
     super(props)
@@ -142,6 +143,9 @@ class App extends Component{
             </Route>
             <Route exact path='/preferences'>
               <TestPreferences/>
+            </Route>
+            <Route exact path='/payCompleted'>
+              <CompletedPay/>
             </Route>
           </Switch>
           <Footer/>
