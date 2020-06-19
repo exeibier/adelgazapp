@@ -87,6 +87,9 @@ h2{
         margin:0;
         
     }
+    .diets-wrapper img {
+        width: 300px;
+    }
     .icons-row {
         height: auto;
     }

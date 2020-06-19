@@ -1,4 +1,4 @@
-const URL_BASE = 'http://localhost:8082/'
+const URL_BASE = 'https://fitu-api.mybluemix.net/'
 const userId = localStorage.getItem('authIdUser')
 const testId = localStorage.getItem('authIdTestUser')
 const eatingId = localStorage.getItem('idEatingPlan')

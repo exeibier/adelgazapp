@@ -48,6 +48,7 @@ export default class CardTest extends Component {
     console.log(data);
     let response = await PostTest(data);
     let responseJSON = await response.json();
+    console.log(responseJSON)
     if (responseJSON.success) {
       localStorage.setItem("authIdTestUser", responseJSON.data.idTest);
       this.setState({
