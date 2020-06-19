@@ -59,21 +59,50 @@ import {
         </>
       );
     });
+    const shoppingCartMobile = allIngridients.map((item, index) => {
+      return (
+        <>
+          <tr key={index}>
+            <td scope="row">
+              <img className="img-order" src={item.image}></img>
+            </td>
+            <td className="border-0 align-middle text-center">{item.grams}</td>
+            <td className="border-0 align-middle text-center">${item.price % 1 !=0 ? item.price :`${item.price}.00`}</td>
+          </tr>
+        </>
+      );
+    });
 
     return (
       <div>
         <div class="wrapper-order ">
-          <table class="table">
+          <table class="table d-none d-sm-table">
             <thead>
               <tr>
+                <th scope="col">&nbsp;</th>
                 <th scope="col">Producto</th>
-                <th scope="col">Precio</th>
+                <th scope="col" className='text-center'>Porción</th>
+                <th scope="col" className='text-center'>Precio</th>
+              </tr>
+            </thead>
+            <tbody>
+              {shoppingCart}
+              <tr className='text-right'>
+                <td colSpan='4'>Total: ${total}</td>
+              </tr>
+            
+            </tbody>
+          </table>
+          <table class="table d-table d-sm-none">
+            <thead>
+              <tr>
+                <th scope="col">&nbsp;</th>
                 <th scope="col" className='text-center'>Porción</th>
                 <th scope="col" className='text-center'>Total</th>
               </tr>
             </thead>
             <tbody>
-              {shoppingCart}
+              {shoppingCartMobile}
               <tr className='text-right'>
                 <td colSpan='4'>Total: ${total}</td>
               </tr>
