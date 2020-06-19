@@ -1,25 +1,24 @@
 .img-fisio{
-    width: 150px;
-    height:120px;
+    width: 350px;
+    height:350px;
     display:block;
     margin:auto;
   
 }
 .type-physiognomy{
-    color:#1b1b1b;
+    color:grey;
 }
 
 .text-fisionomia{
     font-size: 20px;
+    color: grey;
 }
 .btn-send-1 {
-    margin: 10px 0;
-    padding: 5px 10px;
+    margin: 30px 0;
     text-align: center;
-  
 }
 .btn-send-1 a {
-    padding:5px 15px;
+    padding:10px 50px;
     color: inherit;
     text-decoration: inherit;
     background: #92c246;

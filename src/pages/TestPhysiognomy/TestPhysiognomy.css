@@ -30,11 +30,15 @@
   background-size: cover;
   border-radius: 15px;
 }
+.wrapper-image{
+  padding: 17px 0;
+}
 .wrapper-image p{
   padding: 30px;
   font-size: 20px;
   font-weight: 600;
 }
+
 
 
 .welcome{
@@ -44,7 +48,7 @@
   height: 120vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 1000px) {
   .container {
     display: block;
   }
@@ -54,12 +58,9 @@
   .user{
     height: 170vh;
   }
+  .wrapper-image{
+    display: none;
+  }
   
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-.test-wrapper{
-  padding-top:150px;
-}
-  
-  }

@@ -76,7 +76,7 @@ export default class CardPhysiognomy extends Component {
 
                         }
                         
-                        <h5 className='text-center type-physiognomy '>{title}</h5>
+                        <h2 className='text-center type-physiognomy '>{title}</h2>
                         <h3 class="text-justify text-fisionomia p-3">{message}</h3>
                     </div>
                 </div>

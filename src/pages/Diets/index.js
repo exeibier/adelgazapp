@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-
+import Loader from "../../components/Loader";
 
 import { GetEatingPlan } from "../../services/services";
-import {
-  Link
-} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import "./Diets.css";
 import CardDiets from "./CardDiets";
@@ -16,16 +14,27 @@ export default class Diets extends Component {
     super(props);
     this.state = {
       eatingPlans: [{ diets: [] }],
+      loading: true,
     };
   }
-
+  sleep = (milliseconds) => {
+    return new Promise((resolve) => setTimeout(resolve, milliseconds));
+  };
+  wait = async (milliseconds = 2000) => {
+    await this.sleep(milliseconds);
+    this.setState({
+      loading: false,
+    });
+  };
 
   async componentDidMount() {
+    this.wait(2000);
     let response = await GetEatingPlan();
     const responseJSON = await response.json();
     const { eatingPlans } = responseJSON.data;
+    console.log(eatingPlans);
     if (responseJSON.success) {
-      localStorage.setItem('idEatingPlan', eatingPlans[0]._id)
+      localStorage.setItem("idEatingPlan", eatingPlans[0]._id);
       this.setState({
         eatingPlans,
       });
@@ -37,7 +46,7 @@ export default class Diets extends Component {
   render() {
     const allDiets = this.state.eatingPlans[0];
     const { diets } = allDiets;
-
+    if (this.state.loading) return <Loader />;
     const renderDiets =
       diets && diets.length !== 0
         ? diets.map((item, index) => {
@@ -56,7 +65,6 @@ export default class Diets extends Component {
           })
         : null;
 
-
     return (
       <div className="diet-wrapper">
         <Header
@@ -69,7 +77,7 @@ export default class Diets extends Component {
           <div className="row">{renderDiets}</div>
         </div>
         <div className="card-1-button">
-          <Link to='/order'>
+          <Link to="/order">
             Ve tu carrito
             <FontAwesomeIcon icon={faShoppingCart} />
           </Link>
@@ -78,4 +86,3 @@ export default class Diets extends Component {
     );
   }
 }
-

@@ -1,7 +1,7 @@
 .shop-card {
     border-radius: 15px;
     margin-top: 30px;
-    box-shadow: 8px 10px 25px -1px rgba(0,0,0,0.47);
+    border: lightgray solid 1px ;
 }
 
 .shop-card .shop-card-img img{

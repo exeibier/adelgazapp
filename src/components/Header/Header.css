@@ -14,13 +14,12 @@ header .header-text h2{
 header .header-text{
     position: absolute;
     top:150px;
-    right:600px;
-}
+    right: 550px;}
 
 @media (max-width:900px){
     header .header-text {
         position: absolute;
         top: 135px;
-        right: 30px;
+        right: 13px;
     }
 }

@@ -169,10 +169,6 @@ export default class CardTest extends Component {
           </div>
           <li className="data-form">Estima tu porcentaje de grasa</li>
           <div className="text-center">
-            <img
-              className="img-grasa"
-              src="https://d2z0k43lzfi12d.cloudfront.net/blog/vcdn302/wp-content/uploads/2017/12/body-type_workout-1200x800.jpg"
-            />
           </div>
           <div className="d-flex justify-content-between form-group">
             <select

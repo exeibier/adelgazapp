@@ -35,14 +35,14 @@ export default class Home extends Component {
                 </div>
                 <div className="col-6 col-lg-3 icon-wrapper">
                   <FontAwesomeIcon icon={faWeight} className="icon-home" />
-                  <p>Recibe tu fisionomia y tu plan alimenticio</p>
+                  <p>Onten tu fisionomía y tu plan alimenticio</p>
                 </div>
                 <div className="col-6 col-lg-3 icon-wrapper">
                   <FontAwesomeIcon
                     icon={faShoppingBasket}
                     className="icon-home"
                   />
-                  <p>Obten tu carrito personalizado y compra facilmente</p>
+                  <p>Obten tu carrito personalizado y compra fácilmente</p>
                 </div>
                 <div className="col-6 col-lg-3 icon-wrapper">
                   <FontAwesomeIcon
@@ -80,7 +80,7 @@ export default class Home extends Component {
                   <div className="text-home-wrapper">
                     <p>
                       Accede de manera fácil y rápida a tu plan alimenticio y
-                      compra en solo tres clicks hasta la comodidad de tu hogar
+                      compra en solo tres clicks desde la comodidad de tu hogar
                     </p>
                   </div>
                 </div>
